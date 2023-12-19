@@ -1,13 +1,9 @@
-html,
-body {
+html, body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+  font-family: Arial, sans-serif; /* Friendly font */
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 main {
@@ -26,10 +22,95 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
+a {
+  color: #61dafb; /* A light blue for links, feel free to change */
+}
+
+
 .container {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+/* Social Media Icons */
+.nav-icon {
+  color: #ffffff; /* White color, change as needed */
+  font-size: 1.5rem; /* Larger icons */
+}
+
+.nav-icon:hover {
+  color: #61dafb; /* Change color on hover */
+}
+
+.feature-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+.feature-column {
+  width: calc(33.333% - 10px); /* Accounting for small margins */
+  margin: 5px;
+  text-align: center;
+}
+
+.feature-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .feature-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-column {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Email Signup Section Adjustments */
+.email-signup-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem; /* Space between elements */
+  background-color: #cc0000; /* Change this to your preferred color */
+  width: 100%; /* Full width of the container */
+}
+
+/* Adjust the form within the email section for better alignment */
+.email-signup-section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* Form takes full width of the section */
+}
+
+/* You might want to adjust the width of the input and button as well */
+.email-signup-section input[type="email"],
+.email-signup-section button {
+  flex: 1; /* Allows input and button to expand */
+  margin: 0 0.5rem; /* Adds a little margin on the sides */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .email-signup-section form {
+    flex-direction: column;
+  }
+
+  .email-signup-section input[type="email"],
+  .email-signup-section button {
+    width: 90%; /* Adjusts width for smaller screens */
+    margin: 0.5rem 0; /* Margin for vertical layout */
+  }
 }
