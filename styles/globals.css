@@ -81,7 +81,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   gap: 1rem; /* Space between elements */
   background-color: #cc0000; /* Change this to your preferred color */
   width: 100%; /* Full width of the container */
@@ -113,4 +113,51 @@ a {
     width: 90%; /* Adjusts width for smaller screens */
     margin: 0.5rem 0; /* Margin for vertical layout */
   }
+}
+
+/* Email Signup Button Adjustments */
+.email-signup-section button {
+  padding: 0.5rem 1rem; /* Comfortable padding */
+  flex: none; /* Prevents the button from expanding like the input field */
+  width: auto; /* Lets the button size itself based on its content */
+  max-width: 200px; /* Maximum width to ensure it doesn't get too large */
+  /* ...other button styles... */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .email-signup-section button {
+    width: 90%; /* Full width on smaller screens for easy tapping */
+    margin: 0.5rem 0; /* Consistent margin for vertical layout */
+  }
+}
+
+/* Cookie Consent Banner Styles */
+.cookie-consent-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Dark background for visibility */
+  color: #fff; /* Light text for contrast */
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.cookie-consent-banner p {
+  margin: 0 0 1rem 0; /* Spacing for the text */
+}
+
+.cookie-consent-banner button {
+  background-color: #61dafb; /* Matching your site's button style */
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cookie-consent-banner button:hover {
+  background-color: #4da6d3; /* Slightly darker on hover */
 }

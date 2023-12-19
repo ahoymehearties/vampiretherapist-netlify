@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Navbar from '@components/Navbar'
+import CookieConsent from '@components/CookieConsent'
 import Link from 'next/link';
 
 export default function Home() {
@@ -14,9 +15,9 @@ export default function Home() {
                 <div style={{ flex: 1, padding: '1rem' }}>
                     <img src="/path/to/game-logo.png" alt="Vampire Therapist logo" style={{ maxWidth: '100%' }} />
                     <p style={{ color: '#fff' }}>Boilerplate information about how awesome vampire therapist is and how there are much worse ways to spend 14.99.</p>
-                    <Link href="/steamlist" passHref> {/* Using passHref for proper <a> tag handling */}
-                        <a style={{ backgroundColor: '#61dafb', color: '#000', padding: '0.5rem 1rem', borderRadius: '5px', textDecoration: 'none' }}>Wishlist button</a>
-                    </Link>
+                    <a href="https://store.steampowered.com/steamlist" style={{ backgroundColor: '#61dafb', color: '#000', padding: '0.5rem 1rem', borderRadius: '5px', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
+                    Wishlist button
+                    </a>
                 </div>
 
                 {/* Right Column - Video */}
@@ -54,12 +55,14 @@ export default function Home() {
                         <button type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
                         <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
                             {/* Hidden field for bot protection */}
-                            <input type="text" name="b_2409a1e292ef73584f49e82d5_0a1126812f" tabindex="-1" value="" />
+                            <input type="text" name="b_2409a1e292ef73584f49e82d5_0a1126812f" tabIndex="-1" value="" readOnly />
                         </div>
                     </form>
                 </div>
 
             </main>
+            <Footer />
+            <CookieConsent />
         </>
     );
 }
