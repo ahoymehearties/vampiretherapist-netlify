@@ -6,6 +6,11 @@ html, body {
   margin: 0;
 }
 
+nav {
+  z-index: 1000; /* High value to ensure it's above other elements */
+  position: relative; /* z-index works on positioned elements */
+}
+
 main {
   padding: 5rem 0;
   flex: 1;
@@ -13,6 +18,21 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 code {
@@ -56,12 +76,21 @@ a {
 .feature-column {
   width: calc(33.333% - 10px); /* Accounting for small margins */
   margin: 5px;
-  text-align: center;
+  text-align: left;
 }
 
 .feature-column img {
   max-width: 100%;
   height: auto;
+}
+
+.feature-column p {
+  /* Additional styles for paragraphs if needed */
+}
+
+.feature-header {
+  text-align: center; /* Centers the headers */
+  margin-bottom: 1rem; /* Spacing between header and image */
 }
 
 @media (max-width: 768px) {

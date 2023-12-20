@@ -3,6 +3,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Navbar from '@components/Navbar'
 import CookieConsent from '@components/CookieConsent'
+import Image from 'next/image'
 import Link from 'next/link';
 
 export default function Home() {
@@ -13,16 +14,39 @@ export default function Home() {
             <div className="section" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem 0' }}>
                 {/* Left Column */}
                 <div style={{ flex: 1, padding: '1rem' }}>
-                    <img src="/path/to/game-logo.png" alt="Vampire Therapist logo" style={{ maxWidth: '100%' }} />
-                    <p style={{ color: '#fff' }}>Boilerplate information about how awesome vampire therapist is and how there are much worse ways to spend 14.99.</p>
-                    <a href="https://store.steampowered.com/steamlist" style={{ backgroundColor: '#61dafb', color: '#000', padding: '0.5rem 1rem', borderRadius: '5px', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
-                    Wishlist button
+                    <Image
+                        src="/images/VTLogoWhite.png" // Path to your image in the public folder
+                        alt="Vampire Therapist Logo"
+                        width={500}  // Adjust the width as needed
+                        height={50}  // Adjust the height as needed
+                        layout="responsive"
+                      />
+                    <p style={{ color: '#fff' }}>Guide vampires through centuries of emotional baggage, decades of delusions, and the odd bout of self-loathing with real cognitive behavioral therapy concepts and become a Vampire Therapist! In this innovative game, you'll use actual therapy techniques to help vampires from across history figure themselves out.</p>
+
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <a href="https://store.steampowered.com/steamlist" target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src="/images/steam-wishlist-button.webp" // Path to your image in the public folder
+                        alt="Steam Wishlist Button"
+                        width={200}  // Adjust the width as needed
+                        height={50}  // Adjust the height as needed
+                        layout="fixed"
+                      />
                     </a>
+                </div>
                 </div>
 
                 {/* Right Column - Video */}
                 <div style={{ flex: 1, padding: '1rem' }}>
-                    <iframe width="100%" height="315" src="YOUR_VIDEO_URL" frameBorder="0" allowFullScreen></iframe>
+                    <div className="video-responsive">
+                        <iframe
+                            src="https://www.youtube.com/embed/4cjdUo7MEqU" // Replace VIDEO_ID
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            title="Embedded youtube"
+                        ></iframe>
+                    </div>
                 </div>
             </div>
             {/* Features */}
@@ -30,20 +54,26 @@ export default function Home() {
             <div className="feature-section">
                     {/* Column 1 */}
                     <div className="feature-column">
-                        <img src="/path/to/feature1.jpg" alt="Feature 1 Image" />
-                        <p>Feature 1 Description</p>
+                        
+                        <Image src="/images/vtshot2.png" alt="Feature 1 Image" width={500} height={300} />
+                        <h3 className="feature-header">Gothic World</h3>
+                        <p>Enter a unique gothic world with hilarious, memorable characters.</p>
                     </div>
 
                     {/* Column 2 */}
                     <div className="feature-column">
-                        <img src="/path/to/feature2.jpg" alt="Feature 2 Image" />
-                        <p>Feature 2 Description</p>
+                        
+                        <Image src="/images/vtshot6.png" alt="Feature 1 Image" width={500} height={300} />
+                        <h3 className="feature-header">Therapeutic Principles</h3>
+                        <p>Learn how humans alive and undead think themselves into dark places, and how to crawl back out again using real therapeutic principles.</p>
                     </div>
 
                     {/* Column 3 */}
                     <div className="feature-column">
-                        <img src="/path/to/feature3.jpg" alt="Feature 3 Image" />
-                        <p>Feature 3 Description</p>
+                        
+                        <Image src="/images/vtshot5.png" alt="Feature 1 Image" width={500} height={300} />
+                        <h3 className="feature-header">Be a Therapist</h3>
+                        <p>Be the therapist! Help vampires from the Bronze Age up to the present find their inner peace, and maybe find yours along the way.</p>
                     </div>
                 </div>
 
