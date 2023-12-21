@@ -10,8 +10,8 @@ export default function Home() {
     return (
         <>
             <Navbar />
-            <main style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-            <div className="section" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem 0' }}>
+            <main className="main-container">
+                <div className="section">
                 {/* Left Column */}
                 <div style={{ flex: 1, padding: '1rem' }}>
                     <Image
@@ -37,7 +37,7 @@ export default function Home() {
                 </div>
 
                 {/* Right Column - Video */}
-                <div style={{ flex: 1, padding: '1rem' }}>
+                <div className="column">
                     <div className="video-responsive">
                         <iframe
                             src="https://www.youtube.com/embed/4cjdUo7MEqU" // Replace VIDEO_ID

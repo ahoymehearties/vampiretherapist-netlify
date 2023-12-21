@@ -20,7 +20,7 @@ const CookieConsent = () => {
 
     return (
         <div className="cookie-consent-banner">
-            <p>We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</p>
+            <p>We use third-party cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</p>
             <button onClick={handleDismiss}>Okay</button>
         </div>
     );

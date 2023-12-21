@@ -2,7 +2,7 @@
 
 export default function Navbar() {
     return (
-        <nav style={{ backgroundColor: "#333", padding: "1rem", position: "fixed", top: 0, width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <nav style={{ backgroundColor: "#333", padding: ".5rem", position: "fixed", top: 0, width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ marginLeft: "1rem" }}>
                 <img src="/images/Little-Bat-Games-logowide.svg" alt="LBG Logo" style={{ height: "50px" }} />
             </div>
