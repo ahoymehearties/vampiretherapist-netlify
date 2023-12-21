@@ -62,6 +62,10 @@ code
   padding: 2rem 0;
 }
 
+.section p {
+  margin-top: -1rem;
+}
+
 
 .column {
   flex: 1;

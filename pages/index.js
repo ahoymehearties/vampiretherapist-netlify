@@ -21,7 +21,7 @@ export default function Home() {
                         height={50}  // Adjust the height as needed
                         layout="responsive"
                       />
-                    <p style={{ color: '#fff' }}>Guide vampires through centuries of emotional baggage, decades of delusions, and the odd bout of self-loathing with real cognitive behavioral therapy concepts and become a Vampire Therapist! In this innovative game, you'll use actual therapy techniques to help vampires from across history figure themselves out.</p>
+                    <p style={{ color: '#fff' }}>Embark on a journey of healing and discovery as a Vampire Therapist, where you unravel centuries of emotional turmoil, dispel decades of delusions, and confront the complexities of self-loathing. Utilizing authentic cognitive behavioral therapy techniques, this groundbreaking game invites you to guide vampires from various epochs through their psychological struggles. Experience the transformative power of therapy as you help these timeless beings navigate their inner worlds and find peace.    </p>
 
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <a href="https://store.steampowered.com/steamlist" target="_blank" rel="noopener noreferrer">
@@ -56,24 +56,24 @@ export default function Home() {
                     <div className="feature-column">
                         
                         <Image src="/images/vtshot2.png" alt="Feature 1 Image" width={500} height={300} />
-                        <h3 className="feature-header">Gothic World</h3>
-                        <p>Enter a unique gothic world with hilarious, memorable characters.</p>
+                        <h3 className="feature-header">Enigmatic Gothic Universe</h3>
+                        <p>Step into an enigmatic gothic universe set in a European vampire-run goth club. As a reformed cowboy vampire, you'll navigate a world of dark European nightlife, encountering ancient vampires and a diverse array of clubgoers. Immerse yourself in a setting where humor and memorable characters bring the shadows to life.</p>
                     </div>
 
                     {/* Column 2 */}
                     <div className="feature-column">
                         
                         <Image src="/images/vtshot6.png" alt="Feature 1 Image" width={500} height={300} />
-                        <h3 className="feature-header">Therapeutic Principles</h3>
-                        <p>Learn how humans alive and undead think themselves into dark places, and how to crawl back out again using real therapeutic principles.</p>
+                        <h3 className="feature-header">Cognitive Therapy Mechanics</h3>
+                        <p>Dive into the mechanics of cognitive behavioral therapy, intricately woven into gameplay. Understand the psychological depths of both the living and the undead. Engage with concepts and methodologies that are not only game-centric but also vetted by professional therapists, offering a unique blend of entertainment and real-world insight.</p>
                     </div>
 
                     {/* Column 3 */}
                     <div className="feature-column">
                         
                         <Image src="/images/vtshot5.png" alt="Feature 1 Image" width={500} height={300} />
-                        <h3 className="feature-header">Be a Therapist</h3>
-                        <p>Be the therapist! Help vampires from the Bronze Age up to the present find their inner peace, and maybe find yours along the way.</p>
+                        <h3 className="feature-header">Therapeutic Journeys</h3>
+                        <p>Embrace the role of a vampire therapist, guiding a wide range of patients from the Bronze Age to modern times towards mental well-being. Through your interactions, uncover and address distorted thinking patterns, gaining insights that bridge the supernatural and the human condition. Your therapeutic journey is not just about healing others, but also about discovering universal truths.</p>
                     </div>
                 </div>
 
