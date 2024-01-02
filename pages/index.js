@@ -40,7 +40,7 @@ export default function Home() {
                 <div className="column">
                     <div className="video-responsive">
                         <iframe
-                            src="https://www.youtube.com/embed/4cjdUo7MEqU" // Replace VIDEO_ID
+                            src="https://www.youtube.com/embed/8nk-l_Txdt0" // Replace VIDEO_ID
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -57,7 +57,7 @@ export default function Home() {
                         
                         <Image src="/images/vtshot2.png" alt="Feature 1 Image" width={500} height={300} />
                         <h3 className="feature-header">Enigmatic Gothic Universe</h3>
-                        <p>Step into an enigmatic gothic universe set in a European vampire-run goth club. As a reformed cowboy vampire, you'll navigate a world of dark European nightlife, encountering ancient vampires and a diverse array of clubgoers. Immerse yourself in a setting where humor and memorable characters bring the shadows to life.</p>
+                        <p>Step into an unique gothic universe set in a European vampire-run goth club. As a reformed cowboy vampire, you'll navigate a world of dark European nightlife, encountering ancient vampires and a diverse array of clubgoers. Immerse yourself in a setting where humor and memorable characters bring the shadows to life.</p>
                     </div>
 
                     {/* Column 2 */}
