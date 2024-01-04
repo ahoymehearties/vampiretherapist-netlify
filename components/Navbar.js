@@ -1,8 +1,21 @@
-// components/Navbar.js
+import React, { useState, useEffect } from 'react';
 
 export default function Navbar() {
+    const [navBackground, setNavBackground] = useState("#333");
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 50;
+            setNavBackground(show ? "#333a" : "#333"); // "#333a" is slightly transparent
+        };
+        document.addEventListener("scroll", handleScroll);
+        return () => {
+            document.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <nav style={{ backgroundColor: "#333", padding: ".5rem", position: "fixed", top: 0, width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <nav style={{ backgroundColor: navBackground, padding: ".5rem", position: "fixed", top: 0, width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", transition: "background-color 0.3s ease" }}>
             <div style={{ marginLeft: "1rem" }}>
                 <img src="/images/Little-Bat-Games-logowide.svg" alt="LBG Logo" style={{ height: "50px" }} />
             </div>

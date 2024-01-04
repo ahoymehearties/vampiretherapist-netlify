@@ -21,7 +21,7 @@ export default function Home() {
                         height={50}  // Adjust the height as needed
                         layout="responsive"
                       />
-                    <p style={{ color: '#fff' }}>Embark on a journey of healing and discovery as a Vampire Therapist, where you unravel centuries of emotional turmoil, dispel decades of delusions, and confront the complexities of self-loathing. Utilizing authentic cognitive behavioral therapy techniques, this groundbreaking game invites you to guide vampires from various epochs through their psychological struggles. Experience the transformative power of therapy as you help these timeless beings navigate their inner worlds and find peace.    </p>
+                    <p style={{ color: '#fff' }}>Embark on a journey of healing and discovery as a Vampire Therapist, where you unravel centuries of emotional turmoil, dispel decades of delusions, and confront the complexities of self-loathing. Utilizing authentic cognitive behavioral therapy techniques, this groundbreaking game invites you to guide vampires from various epochs through their psychological struggles. Experience the transformative power of therapy as you help these timeless beings navigate their psyches and find peace.    </p>
 
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <a href="https://store.steampowered.com/steamlist" target="_blank" rel="noopener noreferrer">
