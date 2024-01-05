@@ -50,17 +50,21 @@ export default function Home() {
 
     return (
         <>
+            <Head>
+                <title>Vampire Therapist - Press</title>
+                <meta name="description" content="Press kit for Vampire Therapist" />
+            </Head>
             <Navbar />
             <main className="main-container">
 
                 <div className="header-image-container">
-
-                    <Image 
-                        src="/images/VT_LargeCapsule.png" 
-                        alt="Header Image" 
-                        layout="fill"
-                        objectFit="cover"
-                    />
+                    <div 
+                        className="parallax-image"
+                        style={{ 
+                            backgroundImage: `url('/images/VT_LargeCapsule.png')`,
+                            transform: `translateY(${offsetY * 0.5}px)` 
+                        }}
+                    ></div>
                 </div>
                 <div className="content-container">
                     <h1>Description</h1>
@@ -116,22 +120,22 @@ export default function Home() {
                     <h1>Images</h1>
                     <Slider {...settings}>
                       <div>
-                        <img src="/images/vtshot1.png" alt="Image 1" />
+                        <img src="/images/VampireTherapist_1.png" alt="Image 1" />
                       </div>
                       <div>
-                        <img src="/images/vtshot2.png" alt="Image 2" />
+                        <img src="/images/VampireTherapist_2.png" alt="Image 2" />
                       </div>
                       <div>
-                        <img src="/images/vtshot3.png" alt="Image 3" />
+                        <img src="/images/VampireTherapist_3.png" alt="Image 3" />
                       </div>
                       <div>
-                        <img src="/images/vtshot4.png" alt="Image 4" />
+                        <img src="/images/VampireTherapist_4.png" alt="Image 4" />
                       </div>
                       <div>
-                        <img src="/images/vtshot5.png" alt="Image 5" />
+                        <img src="/images/VampireTherapist_5.png" alt="Image 5" />
                       </div>
                       <div>
-                        <img src="/images/vtshot6.png" alt="Image 6" />
+                        <img src="/images/VampireTherapist_6.png" alt="Image 6" />
                       </div>
                     </Slider>
 
@@ -173,7 +177,7 @@ export default function Home() {
                         <p>Anton Licht<br />
                         Dan Higgins</p>
                         <h3>Graphic Design and UI Support</h3>
-                        <p>Nicole Aris</p>
+                        <p>Nico Aris</p>
                         <h3>Prototype Concept Artist</h3>
                         <p>Daehan Stevenson</p>
                         <h3>Funding Support</h3>
@@ -182,11 +186,11 @@ export default function Home() {
                     <div className="press-column">
                         <h2>Contact</h2>
                         <h3>Inquiries</h3>
-                        <p>hello@littlebat.games</p>
+                        <p><a href="mailto:press@littlebat.games">press@littlebat.games</a></p>
                         <h3>X.com</h3>
-                        <p>https://twitter.com/littlebatgames</p>
+                        <p><a href="https://twitter.com/littlebatgames">https://twitter.com/littlebatgames</a></p>
                         <h3>Web</h3>
-                        <p>https://littlebat.games</p>
+                        <p><a href="https://littlebat.games">https://littlebat.games</a></p>
                     </div>
                 </div>
             </main>

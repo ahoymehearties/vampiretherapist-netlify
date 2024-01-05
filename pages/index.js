@@ -9,6 +9,16 @@ import Link from 'next/link';
 export default function Home() {
     return (
         <>
+            <Head>
+                <title>Vampire Therapist</title>
+                <meta name="description" content="Vampire Therapist is a video game about finding yourself and drinking blood. Coming to Steam June 2024." />
+                <meta property="og:title" content="Vampire Therapist" />
+                <meta property="og:description" content="Vampire Therapist is a video game about finding yourself and drinking blood. Coming to Steam June 2024." />
+                <meta property="og:image" content="/images/VT_LargeCapsule.png" />
+                <meta property="og:url" content="https://vampiretherapist.com" />
+                <meta property="og:type" content="website" />
+                <meta name="robots" content="index, follow" />
+            </Head>
             <Navbar />
             <main className="main-container">
                 <div className="section">
@@ -56,7 +66,7 @@ export default function Home() {
                     <div className="feature-column">
                         
                         <Image src="/images/vtshot2.png" alt="Feature 1 Image" width={500} height={300} />
-                        <h3 className="feature-header">Enigmatic Gothic Universe</h3>
+                        <h1 className="feature-header">Enigmatic Gothic Universe</h1>
                         <p>Step into an unique gothic universe set in a European vampire-run goth club. As a reformed cowboy vampire, you'll navigate a world of dark European nightlife, encountering ancient vampires and a diverse array of clubgoers. Immerse yourself in a setting where humor and memorable characters bring the shadows to life.</p>
                     </div>
 
@@ -64,7 +74,7 @@ export default function Home() {
                     <div className="feature-column">
                         
                         <Image src="/images/vtshot6.png" alt="Feature 1 Image" width={500} height={300} />
-                        <h3 className="feature-header">Cognitive Therapy Mechanics</h3>
+                        <h1 className="feature-header">Cognitive Therapy Mechanics</h1>
                         <p>Dive into the mechanics of cognitive behavioral therapy, intricately woven into gameplay. Understand the psychological depths of both the living and the undead. Engage with concepts and methodologies that are not only game-centric but also vetted by professional therapists, offering a unique blend of entertainment and real-world insight.</p>
                     </div>
 
@@ -72,7 +82,7 @@ export default function Home() {
                     <div className="feature-column">
                         
                         <Image src="/images/vtshot5.png" alt="Feature 1 Image" width={500} height={300} />
-                        <h3 className="feature-header">Therapeutic Journeys</h3>
+                        <h1 className="feature-header">Therapeutic Journeys</h1>
                         <p>Embrace the role of a vampire therapist, guiding a wide range of patients from the Bronze Age to modern times towards mental well-being. Through your interactions, uncover and address distorted thinking patterns, gaining insights that bridge the supernatural and the human condition. Your therapeutic journey is not just about healing others, but also about discovering universal truths.</p>
                     </div>
                 </div>

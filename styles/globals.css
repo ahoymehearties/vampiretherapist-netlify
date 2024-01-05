@@ -9,6 +9,10 @@ html, body {
   margin: 0;
 }
 
+a {
+  color: white !important;
+}
+
 nav {
   z-index: 1000;
   position: fixed;
@@ -23,6 +27,10 @@ nav {
 
 nav.scrolled {
   padding: 0.5rem; /* Smaller padding after scrolling */
+}
+
+.social-icon {
+  color: white;
 }
 
 main {
@@ -162,7 +170,7 @@ code
   align-items: center;
   padding: 1rem;
   gap: 1rem; /* Space between elements */
-  background-color: #cc0000; /* Change this to your preferred color */
+  background-color: #41090F; /* Change this to your preferred color */
   width: 100%; /* Full width of the container */
 }
 
@@ -261,12 +269,15 @@ code
 }
 
 .parallax-image {
-    position: absolute;
     width: 100%;
-    height: 100%; /* Set to 100% of the container */
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    object-fit: cover;
+    transform: scale(1.2); /* Scale up to allow for parallax movement */
 }
 
 .content-container {
@@ -310,9 +321,23 @@ code
 
 /* Responsive adjustment for smaller screens */
 @media (max-width: 768px) {
-  .press-columns {
-    flex-direction: column; /* Stacks the columns on smaller screens */
+  .press-twocolumn {
+    flex-direction: column;
   }
+
+  .press-column {
+    width: 100%; /* Each column takes full width */
+    padding: 1rem; /* Adjust padding as needed */
+  }
+
+  .content-container {
+    width: 80%; /* Or 90%, as per your preference */
+  }
+
+  .logo-image {
+  max-height: 200px; /* Adjust this value as needed */
+  width: auto !important; /* Maintain aspect ratio */
+}
 }
 
 /* Carousel stuff */
