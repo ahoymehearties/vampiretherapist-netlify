@@ -53,6 +53,10 @@ export default function Home() {
             <Head>
                 <title>Vampire Therapist - Press</title>
                 <meta name="description" content="Press kit for Vampire Therapist" />
+                <link rel="icon" href="/favicon.ico" />
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
             </Head>
             <Navbar />
             <main className="main-container">
@@ -61,7 +65,7 @@ export default function Home() {
                     <div 
                         className="parallax-image"
                         style={{ 
-                            backgroundImage: `url('/images/VT_LargeCapsule.png')`,
+                            backgroundImage: `url('/images/VT_Sitebanner.png')`,
                             transform: `translateY(${offsetY * 0.5}px)` 
                         }}
                     ></div>
@@ -171,6 +175,8 @@ export default function Home() {
                         <p>Kim Schumacher</p>
                         <h3>Background Artist</h3>
                         <p>Barbara Langa</p>
+                        <h3>Supporting Character Artist</h3>
+                        <p>Darcy Grimm</p>
                         <h3>Consulting Therapist</h3>
                         <p>Sheila Fell</p>
                         <h3>Programming Support</h3>
@@ -191,6 +197,8 @@ export default function Home() {
                         <p><a href="https://twitter.com/littlebatgames">https://twitter.com/littlebatgames</a></p>
                         <h3>Web</h3>
                         <p><a href="https://littlebat.games">https://littlebat.games</a></p>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/company/little-bat-games">https://www.linkedin.com/company/little-bat-games</a></p>
                     </div>
                 </div>
             </main>
