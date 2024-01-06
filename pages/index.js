@@ -93,7 +93,7 @@ export default function Home() {
                     {/* Column 3 */}
                     <div className="feature-column">
                         
-                        <Image src="/images/vtshot5.png" alt="Feature 1 Image" width={500} height={300} layout="responsive" />
+                        <Image src="/images/VampireTherapist_7.png" alt="Feature 1 Image" width={500} height={300} layout="responsive" />
                         <h1 className="feature-header">Address Historical Issues</h1>
                         <p>Embrace the role of a vampire therapist, guiding a wide range of patients from the Bronze Age to modern times towards mental well-being. Through your interactions, uncover and address distorted thinking patterns, gaining insights that bridge the supernatural and the human condition. Your therapeutic journey is not just about healing others, but also about discovering universal truths.</p>
                     </div>
