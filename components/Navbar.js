@@ -36,6 +36,11 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li style={{ margin: "0 1rem" }}>
+                    <a href="https://discord.gg/zc47bfxD" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-discord social-icon"></i>
+                    </a>
+                </li>
+                <li style={{ margin: "0 1rem" }}>
                     <a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-steam social-icon"></i>
                     </a>

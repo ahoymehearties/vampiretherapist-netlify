@@ -324,6 +324,14 @@ code
   width: auto !important; /* Maintain aspect ratio */
 }
 
+.discord-cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  margin-bottom:1em;
+}
+
 /* Responsive adjustment for smaller screens */
 @media (max-width: 768px) {
   .press-twocolumn {
@@ -356,6 +364,16 @@ code
         background-position: top center; /* Adjust as needed */
 
     }
+
+  .discord-cta-container {
+  width: 80%; /* or whatever width looks best */
+  margin: 0 auto; /* This centers the container */
+}
+
+.discord-cta-container img {
+  width: 100%; /* Ensures the image takes up 100% of the container's width */
+  height: auto; /* Maintains the aspect ratio */
+}
 
 }
 

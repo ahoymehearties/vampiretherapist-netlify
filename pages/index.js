@@ -98,6 +98,12 @@ export default function Home() {
                         <p>Embrace the role of a vampire therapist, guiding a wide range of patients from the Bronze Age to modern times towards mental well-being. Through your interactions, uncover and address distorted thinking patterns, gaining insights that bridge the supernatural and the human condition. Your therapeutic journey is not just about healing others, but also about discovering universal truths.</p>
                     </div>
                 </div>
+            <div className="content-container">
+            <div className="discord-cta-container">
+                <Link href="https://discord.gg/zc47bfxD"><Image src="/images/littlebat-discord-cta-small.png" alt="Discord link" width={600} height={133}  /></Link>
+                </div>
+
+            </div>
 
             {/* New Email Signup Section */}
                 <div className="email-signup-section">
