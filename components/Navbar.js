@@ -31,7 +31,7 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li style={{ margin: "0 1rem" }}>
-                    <a href="https://tiktok.com/vampire.therapist" target="_blank" rel="noopener noreferrer">
+                    <a href="https://tiktok.com/@vampire.therapist" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-tiktok social-icon"></i>
                     </a>
                 </li>
