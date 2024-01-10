@@ -41,7 +41,7 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li style={{ margin: "0 1rem" }}>
-                    <a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://store.steampowered.com/app/2481020/Vampire_Therapist/" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-steam social-icon"></i>
                     </a>
                 </li>
