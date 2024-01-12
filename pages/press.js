@@ -187,7 +187,7 @@ export default function Home() {
                         Dan Higgins</p>
                         <h3>Graphic Design and UI Support</h3>
                         <p>Nico Aris</p>
-                        <h3>Prototype Concept Artist</h3>
+                        <h3>Prototype Concept Artist, UI/UX Consultant</h3>
                         <p>Daehan Stevenson</p>
                         <h3>Funding Support</h3>
                         <p>Medienboard Berlin Brandenburg</p>
