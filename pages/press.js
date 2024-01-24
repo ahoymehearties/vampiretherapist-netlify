@@ -185,6 +185,8 @@ export default function Home() {
                         <h3>Programming Support</h3>
                         <p>Anton Licht<br />
                         Dan Higgins</p>
+			<h3>Editorial Support</h3>
+			<p>Chrysantha Rice</p>
                         <h3>Graphic Design and UI Support</h3>
                         <p>Nico Aris</p>
                         <h3>Prototype Concept Artist, UI/UX Consultant</h3>
