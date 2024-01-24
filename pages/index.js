@@ -58,7 +58,8 @@ export default function Home() {
                 </div>
                 <div className="content-container">
                     <p style={{ color: '#fff' }}>Embark on a journey of healing and discovery as a Vampire Therapist, where you unravel centuries of emotional turmoil, dispel decades of delusions, and confront the complexities of self-loathing. Utilizing authentic cognitive behavioral therapy techniques, this groundbreaking game invites you to guide vampires from various epochs through their psychological struggles. Experience the transformative power of therapy as you help these timeless beings navigate their psyches and find peace.    </p>
-
+                    
+                
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <a href="https://store.steampowered.com/app/2481020/Vampire_Therapist/" target="_blank" rel="noopener noreferrer">
                       <Image
@@ -70,6 +71,11 @@ export default function Home() {
                       />
                     </a>
                 </div>
+                <div className="quotes">
+                    <p><em>…Vampire Therapist, there's no way you don't want to know more about that—but the underlying concept looks genuinely interesting too.</em> — <a href="https://www.pcgamer.com/vampire-therapist-is-a-game-about-helping-the-living-dead-come-to-terms-with-their-centuries-old-emotional-hangups">PC Gamer</a></p>
+                    <p><em>Vampire Therapist from Little Bat Games is one of our most anticipated games of 2024. —  <a href="https://gaymingmag.com/2024/01/vampire-therapist-is-a-thrilling-mix-of-what-we-do-in-the-shadows-and-horrible-histories/">Gayming Magazine</a></em></p>
+                    <p><em>…Vampire Therapist is shaking a lot of things up in one very elegant bag…</em> — <a href="https://www.rockpapershotgun.com/upcoming-visual-novel-vampire-therapist-mixes-vampires-and-dark-humour-with-cbt">Rock, Paper, Shotgun</a></p>
+                    </div>
                 </div>
             {/* Features */}
 
