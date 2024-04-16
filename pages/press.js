@@ -144,6 +144,15 @@ export default function Home() {
                       <div>
                         <img src="/images/VampireTherapist_7.png" alt="Image 7" />
                       </div>
+                      <div>
+                        <img src="/images/VampireTherapist_8.png" alt="Image 8" />
+                      </div>
+                      <div>
+                        <img src="/images/VampireTherapist_9.png" alt="Image 9" />
+                      </div>
+                      <div>
+                        <img src="/images/VampireTherapist_10.png" alt="Image 10" />
+                      </div>
                     </Slider>
 
                 </div>

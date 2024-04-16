@@ -91,7 +91,7 @@ export default function Home() {
                     {/* Column 2 */}
                     <div className="feature-column">
                         
-                        <Image src="/images/vtshot6.png" alt="Feature 1 Image" width={500} height={300} layout="responsive" />
+                        <Image src="/images/VampireTherapist_4.png" alt="Feature 1 Image" width={500} height={300} layout="responsive" />
                         <h1 className="feature-header">Discover Therapy Concepts Through Gameplay</h1>
                         <p>Dive into the mechanics of cognitive behavioral therapy, intricately woven into gameplay. Understand the psychological depths of both the living and the undead. Engage with concepts and methodologies that are not only game-centric but also vetted by professional therapists, offering a unique blend of entertainment and real-world insight.</p>
                     </div>
