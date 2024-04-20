@@ -193,7 +193,8 @@ export default function Home() {
                         <p>Sheila Fell</p>
                         <h3>Programming Support</h3>
                         <p>Anton Licht<br />
-                        Dan Higgins</p>
+                        Dan Higgins<br />
+                        Hendrik Demmer</p>
 			<h3>Editorial Support</h3>
 			<p>Chrysantha Rice</p>
                         <h3>Graphic Design and UI Support</h3>
