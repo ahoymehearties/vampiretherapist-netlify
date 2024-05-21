@@ -88,7 +88,7 @@ export default function Home() {
                         Little Bat Games<br />
                         Based in Berlin, Germany</p>
                         <p><strong>Release Date:</strong><br />
-                        June 18th, 2024</p>
+                        July 18th, 2024</p>
                         <p><strong>Platforms:</strong><br />
                         Steam</p>
                         <p><strong>Website:</strong><br />
