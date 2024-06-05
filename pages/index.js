@@ -106,7 +106,7 @@ export default function Home() {
                 </div>
             <div className="content-container">
             <div className="discord-cta-container">
-                <Link href="https://discord.gg/haFvr8FE"><Image src="/images/littlebat-discord-cta-small.png" alt="Discord link" width={600} height={133}  /></Link>
+                <Link href="https://discord.gg/JM7Xr3zp7V"><Image src="/images/littlebat-discord-cta-small.png" alt="Discord link" width={600} height={133}  /></Link>
                 </div>
 
             </div>
