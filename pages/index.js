@@ -61,7 +61,7 @@ export default function Home() {
                     
                 
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <a href="https://store.steampowered.com/app/2481020/Vampire_Therapist/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://store.steampowered.com/app/2481020?utm_source=website&utm_medium=web&utm_campaign=steam_wishlist_gen" target="_blank" rel="noopener noreferrer">
                       <Image
                         src="/images/steam-wishlist-button.webp" // Path to your image in the public folder
                         alt="Steam Wishlist Button"
@@ -70,7 +70,7 @@ export default function Home() {
                         layout="fixed"
                       />
                     </a>
-		    <a href="https://www.gog.com/en/game/vampire_therapist" target="_blank" rel="noopener noreferrer">
+		    <a href="https://www.gog.com/en/game/vampire_therapist?utm_source=website&utm_medium=web&utm_campaign=gog_wishlist_gen" target="_blank" rel="noopener noreferrer">
 		      <Image
 			src="/images/gogbutton.png"
 			alt="Gog Wishlist Button"
