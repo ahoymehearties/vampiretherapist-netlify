@@ -15,7 +15,36 @@ export default function Home() {
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
 
-        return () => window.removeEventListener('scroll', handleScroll);
+        const steamButton = document.querySelector('a[href="https://store.steampowered.com/app/2481020?utm_source=website&utm_medium=web&utm_campaign=steam_wishlist_gen"]');
+        const gogButton = document.querySelector('a[href="https://www.gog.com/en/game/vampire_therapist?utm_source=website&utm_medium=web&utm_campaign=gog_wishlist_gen"]');
+
+        if (steamButton) {
+            steamButton.addEventListener('click', () => {
+                fbq('track', 'AddToWishlist', {
+                    content_ids: ['steam_2481020'],
+                    content_name: 'Steam Wishlist',
+                    value: 0,
+                    currency: 'USD'
+                });
+            });
+        }
+
+        if (gogButton) {
+            gogButton.addEventListener('click', () => {
+                fbq('track', 'AddToWishlist', {
+                    content_ids: ['gog_vampire_therapist'],
+                    content_name: 'GOG Wishlist',
+                    value: 0,
+                    currency: 'USD'
+                });
+            });
+        }
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            if (steamButton) steamButton.removeEventListener('click', () => {});
+            if (gogButton) gogButton.removeEventListener('click', () => {});
+        };
     }, []);
 
     return (
@@ -70,23 +99,23 @@ export default function Home() {
                         layout="fixed"
                       />
                     </a>
-		    <a href="https://www.gog.com/en/game/vampire_therapist?utm_source=website&utm_medium=web&utm_campaign=gog_wishlist_gen" target="_blank" rel="noopener noreferrer">
-		      <Image
-			src="/images/gogbutton.png"
-			alt="Gog Wishlist Button"
-			width={400}
-			height={100}
-			layout="fixed"
-		     />
-		    </a>
+            <a href="https://www.gog.com/en/game/vampire_therapist?utm_source=website&utm_medium=web&utm_campaign=gog_wishlist_gen" target="_blank" rel="noopener noreferrer">
+              <Image
+            src="/images/gogbutton.png"
+            alt="Gog Wishlist Button"
+            width={400}
+            height={100}
+            layout="fixed"
+             />
+            </a>
                 </div>
                 <div className="quotes">
                     <p><em>…Vampire Therapist, there's no way you don't want to know more about that—but the underlying concept looks genuinely interesting too.</em> — <a href="https://www.pcgamer.com/vampire-therapist-is-a-game-about-helping-the-living-dead-come-to-terms-with-their-centuries-old-emotional-hangups">PC Gamer</a></p>
                     <p><em>Vampire Therapist from Little Bat Games is one of our most anticipated games of 2024. —  <a href="https://gaymingmag.com/2024/01/vampire-therapist-is-a-thrilling-mix-of-what-we-do-in-the-shadows-and-horrible-histories/">Gayming Magazine</a></em></p>
                     <p><em>…Vampire Therapist is shaking a lot of things up in one very elegant bag…</em> — <a href="https://www.rockpapershotgun.com/upcoming-visual-novel-vampire-therapist-mixes-vampires-and-dark-humour-with-cbt">Rock, Paper, Shotgun</a></p>
-		    <p><em>Vampire Therapist promises to be one of the best games of the summer and personally, one of the best games that I’ve ever played.</em> — <a href="https://www.thefandomentals.com/vampire-therapist-demo-review/">The Fandomentals</a></p>
-		    <p><em>This unique new vampire therapy RPG is exactly what I’m looking for.</em> — <a href="https://www.pcgamesn.com/vampire-therapist/demo-interview">PCGamesN</a></p>
-		    <p><em>Rarely have a game’s characters and writing grabbed me so quickly, and I genuinely feel interested to keep learning what it’s teaching me.</em> — <a href="https://nickbait.com/previews/hands-on-preview-vampire-therapist/">Nickbait.com</a></p>
+            <p><em>Vampire Therapist promises to be one of the best games of the summer and personally, one of the best games that I’ve ever played.</em> — <a href="https://www.thefandomentals.com/vampire-therapist-demo-review/">The Fandomentals</a></p>
+            <p><em>This unique new vampire therapy RPG is exactly what I’m looking for.</em> — <a href="https://www.pcgamesn.com/vampire-therapist/demo-interview">PCGamesN</a></p>
+            <p><em>Rarely have a game’s characters and writing grabbed me so quickly, and I genuinely feel interested to keep learning what it’s teaching me.</em> — <a href="https://nickbait.com/previews/hands-on-preview-vampire-therapist/">Nickbait.com</a></p>
                     </div>
                 </div>
             {/* Features */}
