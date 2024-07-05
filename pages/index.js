@@ -75,6 +75,20 @@ export default function Home() {
                     ></div>
                 </div>
                 <div className="content-container">
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <iframe src="https://store.steampowered.com/widget/2481020/?utm_source_website&utm_campaign=wishlistgen" frameborder="0" width="646" height="190"></iframe>
+                        <a href="https://www.gog.com/en/game/vampire_therapist?utm_source=website&utm_medium=web&utm_campaign=gog_wishlist_gen" target="_blank" rel="noopener noreferrer">
+              <Image
+            src="/images/gogbutton.png"
+            alt="Gog Wishlist Button"
+            width={400}
+            height={100}
+            layout="fixed"
+             />
+            </a>
+            </div>
+                </div>
+                <div className="content-container">
                     <div className="video-responsive">
                         <iframe
                             src="https://www.youtube.com/embed/wqQsV-tMHRA" // Replace VIDEO_ID
@@ -89,26 +103,7 @@ export default function Home() {
                     <p style={{ color: '#fff' }}>Embark on a journey of healing and discovery as a Vampire Therapist, where you unravel centuries of emotional turmoil, dispel decades of delusions, and confront the complexities of self-loathing. Utilizing authentic cognitive behavioral therapy techniques, this groundbreaking game invites you to guide vampires from various epochs through their psychological struggles. Experience the transformative power of therapy as you help these timeless beings navigate their psyches and find peace.    </p>
                     
                 
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <a href="https://store.steampowered.com/app/2481020?utm_source=website&utm_medium=web&utm_campaign=steam_wishlist_gen" target="_blank" rel="noopener noreferrer">
-                      <Image
-                        src="/images/steam-wishlist-button.webp" // Path to your image in the public folder
-                        alt="Steam Wishlist Button"
-                        width={400}  // Adjust the width as needed
-                        height={100}  // Adjust the height as needed
-                        layout="fixed"
-                      />
-                    </a>
-            <a href="https://www.gog.com/en/game/vampire_therapist?utm_source=website&utm_medium=web&utm_campaign=gog_wishlist_gen" target="_blank" rel="noopener noreferrer">
-              <Image
-            src="/images/gogbutton.png"
-            alt="Gog Wishlist Button"
-            width={400}
-            height={100}
-            layout="fixed"
-             />
-            </a>
-                </div>
+
                 <div className="quotes">
                     <p><em>…Vampire Therapist, there's no way you don't want to know more about that—but the underlying concept looks genuinely interesting too.</em> — <a href="https://www.pcgamer.com/vampire-therapist-is-a-game-about-helping-the-living-dead-come-to-terms-with-their-centuries-old-emotional-hangups">PC Gamer</a></p>
                     <p><em>Vampire Therapist from Little Bat Games is one of our most anticipated games of 2024. —  <a href="https://gaymingmag.com/2024/01/vampire-therapist-is-a-thrilling-mix-of-what-we-do-in-the-shadows-and-horrible-histories/">Gayming Magazine</a></em></p>
