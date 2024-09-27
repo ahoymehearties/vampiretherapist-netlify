@@ -36,7 +36,7 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li style={{ margin: "0 1rem" }}>
-                    <a href="https://discord.gg/yTfcZgXC" target="_blank" rel="noopener noreferrer">
+                    <a href="https://discord.gg/JM7Xr3zp7V" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-discord social-icon"></i>
                     </a>
                 </li>
