@@ -425,3 +425,70 @@ code
   margin:20px auto;
   text-align:center
 }
+
+/* Container that holds Steam + GOG button side by side on desktop */
+.wishlist-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* horizontally center the items */
+  align-items: center;     /* vertically center the items in the same row */
+  gap: 2rem;              /* space between them; adjust as you like */
+  margin: 20px auto;         /* center the entire container if parent is wider */
+  padding: 0;             /* remove any default padding */
+  max-width: 1200px;      /* limit how wide this row can get */
+  width: 100%;
+}
+
+
+.awards-container {
+  /* Use Flex to line up awards side by side on desktop */
+  display: flex;
+  justify-content: center;  /* centers them horizontally */
+  align-items: center;      /* centers them vertically in the row */
+  flex-wrap: wrap;          /* allows wrapping if you have more awards than fit in one row */
+  gap: 2rem;                /* spacing between awards */
+  margin: 2rem auto;        /* adds vertical spacing and centers container horizontally */
+  max-width: 1200px;        /* optional: limit how wide the row can get */
+  text-align: center;       /* ensures text-align is center if you want any text in that container */
+}
+
+/* The images themselves: max height of 250px */
+.awards-container img {
+  max-height: 250px;
+  width: auto; 
+  height: auto; 
+  display: block;    /* ensures each image can be centered properly if needed */
+  margin: 0 auto;    /* centers images themselves if they end up narrower than the container */
+}
+
+/* On mobile, stack vertically */
+@media (max-width: 768px) {
+  .awards-container {
+    flex-direction: column; /* stack them */
+    gap: 1rem;             /* slightly reduce spacing on mobile */
+  }
+}
+
+/* Stack them vertically on mobile */
+@media (max-width: 768px) {
+  .wishlist-container {
+    flex-direction: column;
+    gap: 1rem;   /* reduce gap so they’re not too spaced out on a small screen */
+  }
+}
+
+/* Steam iframe: let it shrink to fit on mobile, but big enough on desktop */
+.steam-iframe {
+  display: block;
+  border: none;
+  /* Let it scale down on smaller screens */
+  width: 100%;
+  /* Don’t exceed the intrinsic 900px from the HTML: */
+  max-width: 900px;
+  /* Let the browser keep the same aspect ratio automatically: */
+  height: 200px;
+  /* Ensure there’s no weird bottom margin inside the iframe */
+  margin: 0;
+  padding: 0;
+}
+

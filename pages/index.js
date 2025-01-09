@@ -74,24 +74,36 @@ export default function Home() {
                         }}
                     ></div>
                 </div>
-                <div className="content-container">
-                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <iframe src="https://store.steampowered.com/widget/2481020/?utm_source_website&utm_campaign=wishlistgen" frameborder="0" width="646" height="190"></iframe>
-                        <a href="https://www.gog.com/en/game/vampire_therapist?utm_source=website&utm_medium=web&utm_campaign=gog_wishlist_gen" target="_blank" rel="noopener noreferrer">
-              <Image
-            src="/images/gogbutton.png"
-            alt="Gog Wishlist Button"
-            width={400}
-            height={100}
-            layout="fixed"
-             />
-            </a>
-            </div>
-                </div>
+                <div className="wishlist-container">
+  <iframe
+    src="https://store.steampowered.com/widget/2481020/?utm_source_website&utm_campaign=wishlistgen"
+    frameBorder="0"
+    width="900"
+    height="480"
+    className="steam-iframe"
+  />
+
+  <a
+    href="https://www.gog.com/en/game/vampire_therapist?utm_source=website&utm_medium=web&utm_campaign=gog_wishlist_gen"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Image
+      src="/images/gogbutton.png"
+      alt="GOG Wishlist Button"
+      width={400}
+      height={100}
+    />
+  </a>
+</div>
+
+
+
+
                 <div className="content-container">
                     <div className="video-responsive">
                         <iframe
-                            src="https://www.youtube.com/embed/wqQsV-tMHRA" // Replace VIDEO_ID
+                            src="https://www.youtube.com/embed/fbO7t8d9vk4" // Replace VIDEO_ID
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -100,9 +112,30 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="content-container">
-                    <p style={{ color: '#fff' }}>Embark on a journey of healing and discovery as a Vampire Therapist, where you unravel centuries of emotional turmoil, dispel decades of delusions, and confront the complexities of self-loathing. Utilizing authentic cognitive behavioral therapy techniques, this groundbreaking game invites you to guide vampires from various epochs through their psychological struggles. Experience the transformative power of therapy as you help these timeless beings navigate their psyches and find peace.    </p>
+                    <p style={{ color: '#fff' }}>Embark on a journey of healing and discovery in the award-winning Vampire Therapist, where you unravel centuries of emotional turmoil, dispel decades of delusions, and confront the complexities of self-loathing. Utilizing authentic cognitive behavioral therapy techniques, this groundbreaking game invites you to guide vampires from various epochs through their psychological struggles. Experience the transformative power of therapy as you help these timeless beings navigate their psyches and find inner peace.    </p>
+                    <p style={{ color: '#fff' }}>With an all-star cast including <strong>Matthew Mercer</strong> (<em>Baldur's Gate 3, Critical Role</em>), <strong>Cyrus Nemati</strong> (<em>Hades, Pyre</em>), <strong>Sarah Grayson</strong> (<em>Hades 2, Gone Home</em>), <strong>Francesca Meaux</strong> (<em>Hades, Final Fantasy VII: Rebirth</em>), and introducing <strong>Kylie Clark</strong> and <strong>Kit Chen</strong>.</p>
                     
-                
+                <div className="awards-container">
+                    <Image 
+                    src="/images/award-dep.png"
+                    alt="DEP Award"
+                    width={400}
+                    height={400}
+                    />
+                    <Image 
+                    src="/images/award-indiex.png"
+                    alt="DEP Award"
+                    width={400}
+                    height={400}
+                    />
+                    <Image 
+                    src="/images/award-nom-indiex.png"
+                    alt="DEP Award"
+                    width={400}
+                    height={400}
+                    />
+
+                    </div>
 
                 <div className="quotes">
                     <p><em>…Vampire Therapist, there's no way you don't want to know more about that—but the underlying concept looks genuinely interesting too.</em> — <a href="https://www.pcgamer.com/vampire-therapist-is-a-game-about-helping-the-living-dead-come-to-terms-with-their-centuries-old-emotional-hangups">PC Gamer</a></p>

@@ -21,12 +21,12 @@ export default function Navbar() {
             </div>
             <ul style={{ listStyleType: "none", display: "flex", marginRight: "1rem" }}>
                 <li style={{ margin: "0 1rem" }}>
-                    <a href="https://twitter.com/vamptherapist" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com/littlebatgames" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-twitter social-icon"></i>
                     </a>
                 </li>
                 <li style={{ margin: "0 1rem" }}>
-                    <a href="https://bsky.app/profile/vampiretherapist.bsky.social" target="_blank" rel="noopener noreferrer">
+                    <a href="https://bsky.app/profile/littlebatgames.bsky.social" target="_blank" rel="noopener noreferrer">
                         <img src="/images/bskyiconw.png" height="16" />
                     </a>
                 </li>
