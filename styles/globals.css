@@ -301,6 +301,29 @@ code
     line-height: 1.5;
 }
 
+
+.ct-image-wrapper {
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;
+    align-content:center;
+    width: 100%;
+    text-align: center; /* Just in case */
+    margin:20px auto !important;
+}
+
+.ct-image-wrapper img {
+  align:0px auto !important;
+}
+
+.dlc-container {
+  width:60%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+
+
+
 .press-twocolumn {
     display: flex;
     justify-content: space-around; /* Spaces out the columns */

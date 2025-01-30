@@ -76,7 +76,7 @@ export default function Home() {
                     A UNIQUE DARK COMEDY GOTHIC SETTING<br />
                     A LEARNING AND SELF-DISCOVERY EXPERIENCE
                     </p>
-                    <p><em>Vampire Therapist</em>, hotly anticipated title from Little Bat Games, redefines the narrative game genre with its innovative 'analyze-'em-up' gameplay. Players step into the shoes of a therapist, whose clientele are vampires from various historical epochs. Set against a backdrop that blends the enigmatic allure of the European goth club scene with the intellectual charm of dark academia, the game delves into the world of mental health with a mix of gentle humor and profound character depth. Developed in collaboration with licensed therapists, it offers an insightful and educational experience, utilizing top-tier voice acting to breathe life into historical figures reimagined through a modern lens. Addressing previously overlooked mental health issues by bringing history into the modern day, Vampire Therapist is a groundbreaking title crafted for a mature audience, set to captivate players when it launches in July 2024.</p>
+                    <p><em>Vampire Therapist</em> the acclaimed title from Little Bat Games, has redefined the narrative game genre with its innovative 'analyze-'em-up' gameplay. Since its launch in July 2024, the game has garnered multiple awards and has been longlisted for the prestigious 2025 BAFTA Games Awards.</p><p>In this single-player experience, players assume the role of a therapist counseling vampires from various historical epochs. The game masterfully blends the enigmatic allure of the European goth club scene with the intellectual charm of dark academia, delving into mental health themes with a mix of gentle humor and profound character depth. Developed in collaboration with licensed therapists, it offers an insightful and educational journey, utilizing top-tier voice acting to breathe life into historical figures reimagined through a modern lens.</p>
                     <h1>The World of Vampire Therapist</h1>
                     <p>A strong new intellectual property, <em>Vampire Therapist</em> leverages thousands of years of human history and is able to support characters, locations, and historical epochs that have been unexamined in other media. As the player progresses, they gain access to "cognitive distortions" -- specific classifications of thought patterns that distort reality. By using real-world therapy techniques while merging the mundane and the supernatural, the game world invites players to explore not only history, but their own thought patterns for an experience both cozy and mature.</p>
                 </div>
@@ -112,7 +112,7 @@ export default function Home() {
                     <h1>Trailer</h1>
                     <div className="video-responsive">
                         <iframe
-                            src="https://www.youtube.com/embed/8nk-l_Txdt0" // Replace VIDEO_ID
+                            src="https://www.youtube.com/embed/mTMJZMGwoa8" // Replace VIDEO_ID
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen

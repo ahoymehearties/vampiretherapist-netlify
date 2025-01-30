@@ -136,6 +136,22 @@ export default function Home() {
                     />
 
                     </div>
+                <div className="dlc-container">
+                    <a
+                        href="https://store.steampowered.com/app/3320590/Vampire_Therapist__Couples_Therapy/?utm_source=website&utm_medium=referral&utm_campaign=website_ct"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        
+                            <Image
+                                src="/images/CTPromo.png"
+                                alt="Link to Vampire Therapist: Couples Therapy DLC"
+                                width={700}
+                                height={394}
+                            />
+                        
+                    </a>
+                </div>
 
                 <div className="quotes">
                     <p><em>…Vampire Therapist, there's no way you don't want to know more about that—but the underlying concept looks genuinely interesting too.</em> — <a href="https://www.pcgamer.com/vampire-therapist-is-a-game-about-helping-the-living-dead-come-to-terms-with-their-centuries-old-emotional-hangups">PC Gamer</a></p>
