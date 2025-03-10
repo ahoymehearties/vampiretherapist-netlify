@@ -117,6 +117,12 @@ export default function Home() {
                     
                 <div className="awards-container">
                     <Image 
+                    src="/images/bafta_badge.png"
+                    alt="BAFTA nomination"
+                    width={400}
+                    height={400}
+                    />
+                    <Image 
                     src="/images/award-dep.png"
                     alt="DEP Award"
                     width={400}
@@ -154,6 +160,10 @@ export default function Home() {
                 </div>
 
                 <div className="quotes">
+                    <p><em>I'm being a bit kinder to myself, and it's nice. It's positive. And it's remarkable how quickly and subtly a game can have that effect.</em> — <a href="https://www.eurogamer.net/vampire-therapist-asks-can-a-game-really-teach-the-fundamentals-of-therapy">Eurogamer</a></p>
+                    <p><em>Letting yourself get lost in this world is a must, and you’ll probably find something you really needed along the way.</em> — <a href="https://www.ginx.tv/en/video-games/tony-hawk-pro-skater-3-4-remake-july-2025-release-announced">Ginx.tv</a></p>
+                    <p><em>It’s simultaneously earnest and winningly ridiculous – but it’s a labour of love, and an original one at that.</em> — <a href="https://www.spectator.co.uk/article/completely-batty-vampire-therapist-reviewed/">The Spectator</a></p>
+                    <p><em>As long as one is conscious of their own mental health and is not afraid to face some dark and heavy themes, Vampire Therapist is a true gem from a mental health standpoint and a successful educational game.</em> — <a href="https://screenrant.com/vampire-therapist-review-a-surprisingly-educational-therapy-session/">Screenrant</a></p>
                     <p><em>…Vampire Therapist, there's no way you don't want to know more about that—but the underlying concept looks genuinely interesting too.</em> — <a href="https://www.pcgamer.com/vampire-therapist-is-a-game-about-helping-the-living-dead-come-to-terms-with-their-centuries-old-emotional-hangups">PC Gamer</a></p>
                     <p><em>Vampire Therapist from Little Bat Games is one of our most anticipated games of 2024. —  <a href="https://gaymingmag.com/2024/01/vampire-therapist-is-a-thrilling-mix-of-what-we-do-in-the-shadows-and-horrible-histories/">Gayming Magazine</a></em></p>
                     <p><em>…Vampire Therapist is shaking a lot of things up in one very elegant bag…</em> — <a href="https://www.rockpapershotgun.com/upcoming-visual-novel-vampire-therapist-mixes-vampires-and-dark-humour-with-cbt">Rock, Paper, Shotgun</a></p>
