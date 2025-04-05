@@ -515,3 +515,13 @@ code
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .dlc-container {
+    width: 90%; /* Let it stretch within reason */
+  }
+
+  .dlc-container img {
+    width: 100% !important; /* Full width of container */
+    height: auto !important; /* Maintain aspect ratio */
+  }
+}
