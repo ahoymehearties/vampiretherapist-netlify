@@ -15,7 +15,7 @@ export default function Impressum() {
                 <h1>Impressum</h1>
                 <p>Little Bat Games UG</p>
 
-                <p>Hauptsitz - Berlin Little Bat Games UG Bessemerstrasse 82, 10 OG Süd 12103 Berlin Sitz Berlin HRB 245273B, Amtsgericht Berlin-Charlottenburg Umsatzsteuer-Identifikationsnummer: DE 1850590</p>
+                <p>Hauptsitz - Berlin Little Bat Games UG Bessemerstrasse 51, 1. OG, 12103 Berlin Sitz Berlin HRB 245273B, Amtsgericht Berlin-Charlottenburg Umsatzsteuer-Identifikationsnummer: DE 1850590</p>
 
                 <p>Geschäftsführer: Cyrus Nemati</p>
 

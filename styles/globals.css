@@ -477,7 +477,7 @@ code
 
 /* The images themselves: max height of 250px */
 .awards-container img {
-  max-height: 250px;
+  max-height: 180px;
   width: auto; 
   height: auto; 
   display: block;    /* ensures each image can be centered properly if needed */
