@@ -134,6 +134,18 @@ export default function Home() {
                     width={400}
                     height={400}
                     />
+                    <Image
+                    src="/images/pup_star.png"
+                    alt="Develop Star Award"
+                    width={400}
+                    height={400}
+                    />
+                    <Image
+                    src="/images/g4cTemp.png"
+                    alt="Games For Change Award"
+                    width={400}
+                    height={400}
+                    />
                     <Image 
                     src="/images/award-indiex.png"
                     alt="DEP Award"
