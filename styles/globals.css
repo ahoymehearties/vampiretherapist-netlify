@@ -525,3 +525,13 @@ code
     height: auto !important; /* Maintain aspect ratio */
   }
 }
+
+
+.console-links {
+	display:block;
+
+}
+
+.console-links img {
+	margin: 10px;
+}

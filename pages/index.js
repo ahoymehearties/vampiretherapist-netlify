@@ -50,17 +50,22 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Vampire Therapist</title>
-                <meta name="description" content="Vampire Therapist is a video game about finding yourself and drinking blood. Coming to Steam June 2024." />
+                <title>Vampire Therapist — BAFTA-Nominated Game About Therapy, Vampires & Self-Discovery</title>
+                <meta name="description" content="Vampire Therapist is the BAFTA-nominated game that uses real cognitive behavioral therapy to help vampires — and maybe you — find inner peace. Featuring Matthew Mercer and an all-star cast. Available now on Steam, GOG, PlayStation, Xbox, and Nintendo Switch." />
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-                <meta property="og:title" content="Vampire Therapist" />
-                <meta property="og:description" content="Vampire Therapist is a video game about finding yourself and drinking blood. Coming to Steam June 2024." />
-                <meta property="og:image" content="/images/VT_LargeCapsule.png" />
+                <meta property="og:title" content="Vampire Therapist — BAFTA-Nominated Game About Therapy & Self-Discovery" />
+                <meta property="og:description" content="The award-winning game that uses real cognitive behavioral therapy to help vampires — and maybe you — find inner peace. Available now on Steam, GOG, PlayStation, Xbox, and Nintendo Switch." />
+                <meta property="og:image" content="https://vampiretherapist.com/images/VT_LargeCapsule.png" />
                 <meta property="og:url" content="https://vampiretherapist.com" />
                 <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="Vampire Therapist" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Vampire Therapist — BAFTA-Nominated Game About Therapy & Self-Discovery" />
+                <meta name="twitter:description" content="The award-winning game that uses real cognitive behavioral therapy to help vampires — and maybe you — find inner peace. Available now." />
+                <meta name="twitter:image" content="https://vampiretherapist.com/images/VT_LargeCapsule.png" />
                 <meta name="robots" content="index, follow" />
             </Head>
             <Navbar />
@@ -74,7 +79,7 @@ export default function Home() {
                         }}
                     ></div>
                 </div>
-                <div className="wishlist-container">
+<div className="wishlist-container">
   <iframe
     src="https://store.steampowered.com/widget/2481020/?utm_source_website&utm_campaign=wishlistgen"
     frameBorder="0"
@@ -95,6 +100,45 @@ export default function Home() {
       height={100}
     />
   </a>
+</div>
+
+<div className="console-links">
+   <a
+    href="https://www.nintendo.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+   <Image
+      src="/images/vampire_coming_to_nintendo.jpg"
+      alt="Vampire Therapist coming to Nintendo"
+      width={300}
+      height={300}
+    />
+    </a>
+<a
+    href="https://store.playstation.com/en-us/concept/10014497"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+   <Image
+      src="/images/vampire_coming_to_ps5_ps4.jpg"
+      alt="Vampire Therapist coming to Playstation"
+      width={300}
+      height={300}
+    />
+    </a>
+<a
+    href="https://www.xbox.com/en-us/games/store/vampire-therapist/9phx2nf7bvcb"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+   <Image
+      src="/images/vampire_coming_to_xbox.jpg"
+      alt="Vampire Therapist coming to Xbox"
+      width={300}
+      height={300}
+    />
+    </a>
 </div>
 
 
