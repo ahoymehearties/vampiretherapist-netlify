@@ -109,7 +109,7 @@ export default function Home() {
     rel="noopener noreferrer"
   >
    <Image
-      src="/images/vampire_coming_to_nintendo.jpg"
+      src="/images/vampire_out_now_on_nintendo.jpg"
       alt="Vampire Therapist coming to Nintendo"
       width={300}
       height={300}
@@ -121,7 +121,7 @@ export default function Home() {
     rel="noopener noreferrer"
   >
    <Image
-      src="/images/vampire_coming_to_ps5_ps4.jpg"
+      src="/images/vampire_out_now_on_ps5_ps4.jpg"
       alt="Vampire Therapist coming to Playstation"
       width={300}
       height={300}
