@@ -104,7 +104,7 @@ export default function Home() {
 
 <div className="console-links">
    <a
-    href="https://www.nintendo.com"
+    href="https://www.nintendo.com/us/store/products/vampire-therapist-switch/"
     target="_blank"
     rel="noopener noreferrer"
   >
