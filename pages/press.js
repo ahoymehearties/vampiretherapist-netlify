@@ -76,9 +76,10 @@ export default function Home() {
                     A UNIQUE DARK COMEDY GOTHIC SETTING<br />
                     A LEARNING AND SELF-DISCOVERY EXPERIENCE
                     </p>
-                    <p><em>Vampire Therapist</em> the acclaimed title from Little Bat Games, has redefined the narrative game genre with its innovative 'analyze-'em-up' gameplay. Since its launch in July 2024, the game has garnered multiple awards and has been longlisted for the prestigious 2025 BAFTA Games Awards.</p><p>In this single-player experience, players assume the role of a therapist counseling vampires from various historical epochs. The game masterfully blends the enigmatic allure of the European goth club scene with the intellectual charm of dark academia, delving into mental health themes with a mix of gentle humor and profound character depth. Developed in collaboration with licensed therapists, it offers an insightful and educational journey, utilizing top-tier voice acting to breathe life into historical figures reimagined through a modern lens.</p>
+                    <p><em>Vampire Therapist</em> the acclaimed title from Little Bat Games, has surprised the narrative game genre with its innovative 'analyze-'em-up' gameplay. Vampire Therapist has garnered multiple awards for its story and educational value, and was nominated for the prestigious 2025 BAFTA Games Awards.</p><p>In this single-player experience, players assume the role of a therapist counseling vampires from various historical epochs. The game masterfully blends the enigmatic allure of the European goth club scene with the intellectual charm of dark academia, delving into mental health themes with a mix of gentle humor and profound character depth. Developed in collaboration with licensed therapists, it offers an insightful and educational journey, utilizing top-tier voice acting to breathe life into historical figures reimagined through a modern lens.</p>
                     <h1>The World of Vampire Therapist</h1>
                     <p>A strong new intellectual property, <em>Vampire Therapist</em> leverages thousands of years of human history and is able to support characters, locations, and historical epochs that have been unexamined in other media. As the player progresses, they gain access to "cognitive distortions" -- specific classifications of thought patterns that distort reality. By using real-world therapy techniques while merging the mundane and the supernatural, the game world invites players to explore not only history, but their own thought patterns for an experience both cozy and mature.</p>
+                    <p>Vampire Therapist: Couples Therapy, was added as DLC to the game in February 2025, examining the difficulties of immortal couples and the history of revolutions.</p>
                 </div>
 
                 <div className="press-twocolumn">
@@ -90,7 +91,7 @@ export default function Home() {
                         <p><strong>Release Date:</strong><br />
                         July 18th, 2024</p>
                         <p><strong>Platforms:</strong><br />
-                        Steam</p>
+                        Steam, GOG, Nintendo, Playstation, Xbox</p>
                         <p><strong>Website:</strong><br />
                         https://vampiretherapist.com</p>
                         <p><strong>Regular Price:</strong><br />
@@ -104,7 +105,9 @@ export default function Home() {
                         <li>A brand-new IP that blends polished comedic writing, a distinct gothic style, and top-tier voice acting to create an engrossing narrative experience</li>
                         <li>A first-of-its-kind mechanic in applied therapy - challenge characters' worldviews by pointing out their "cognitive distortions"</li>
                         <li>A gameplay toolkit that grows as the player learns real therapy concepts</li>
-                        <li>Strong characters pulled from the history books, with consultation from esteemed historians</li>
+                            <li>Strong characters pulled from the history books, with consultation from esteemed historians</li>
+                            <li>Winner of Indie X 2024, the German Developer Prize 2024, German Computer Games Prize 2025, Games for Change 2025</li>
+                            <li>2025 BAFTA Games Nominee</li>
                         </ul>
                     </div>
                 </div>
