@@ -101,7 +101,7 @@ export default function Home() {
                     <source src="/video/VT-AmbientVG4k.mp4" type="video/mp4" />
                 </video>
                 <img
-                    src="/images/VTLogoWhite_Shadow.png"
+                    src="/images/VTLogoWhite_Shadow.webp"
                     alt="Vampire Therapist"
                     className="hero-logo"
                 />
@@ -137,11 +137,11 @@ export default function Home() {
                     </div>
                     <div className="hero-bar-right">
                         <div className="bar-label">THIS IS WHERE YOU OOH AND AHH</div>
-                        <img src="/images/bafta_badge.png" alt="BAFTA Nominee" />
-                        <img src="/images/DCP2025_Signet_Beste-Story.png" alt="DCP 2025 Beste Story" />
-                        <img src="/images/award-indiex.png" alt="IndiEx Award" />
-                        <img src="/images/award-dep.png" alt="DEP 2024 Award" />
-                        <img src="/images/g4cTemp.png" alt="Games for Change Award" />
+                        <img src="/images/bafta_badge.webp" alt="BAFTA Nominee" />
+                        <img src="/images/DCP2025_Signet_Beste-Story.webp" alt="DCP 2025 Beste Story" />
+                        <img src="/images/award-indiex.webp" alt="IndiEx Award" />
+                        <img src="/images/award-dep.webp" alt="DEP 2024 Award" />
+                        <img src="/images/g4cTemp.webp" alt="Games for Change Award" />
                     </div>
                 </div>
             </div>
@@ -282,7 +282,7 @@ export default function Home() {
                     >
                         
                             <Image
-                                src="/images/CTPromo.png"
+                                src="/images/CTPromo.webp"
                                 alt="Link to Vampire Therapist: Couples Therapy DLC"
                                 width={700}
                                 height={394}
@@ -294,7 +294,7 @@ export default function Home() {
                 <div className="quotes" style={{ opacity: quoteVisible ? 1 : 0, transition: "opacity 0.6s ease" }}>
                     <p>
                         <em>{QUOTES[quoteIndex].text}</em>
-                        {" — "}
+                        <br />
                         <a href={QUOTES[quoteIndex].url} target="_blank" rel="noopener noreferrer">
                             {QUOTES[quoteIndex].source}
                         </a>
@@ -307,7 +307,7 @@ export default function Home() {
                     {/* Column 1 */}
                     <div className="feature-column">
                         
-                        <Image src="/images/vtshot2.png" alt="Feature 1 Image" width={500} height={300} layout="responsive" />
+                        <Image src="/images/vtshot2.webp" alt="Feature 1 Image" width={500} height={300} style={{ width: '100%', height: 'auto' }} />
                         <h1 className="feature-header">Explore an Enigmatic Gothic Universe</h1>
                         <p>Step into an unique gothic universe set in a European vampire-run goth club. As a reformed cowboy vampire, you'll navigate a world of dark European nightlife, encountering ancient vampires and a diverse array of clubgoers. Immerse yourself in a setting where humor and memorable characters bring the shadows to life.</p>
                     </div>
@@ -315,7 +315,7 @@ export default function Home() {
                     {/* Column 2 */}
                     <div className="feature-column">
                         
-                        <Image src="/images/VampireTherapist_4.png" alt="Feature 1 Image" width={500} height={300} layout="responsive" />
+                        <Image src="/images/VampireTherapist_4.webp" alt="Feature 1 Image" width={500} height={300} style={{ width: '100%', height: 'auto' }} />
                         <h1 className="feature-header">Discover Therapy Concepts Through Gameplay</h1>
                         <p>Dive into the mechanics of cognitive behavioral therapy, intricately woven into gameplay. Understand the psychological depths of both the living and the undead. Engage with concepts and methodologies that are not only game-centric but also vetted by professional therapists, offering a unique blend of entertainment and real-world insight.</p>
                     </div>
@@ -323,14 +323,14 @@ export default function Home() {
                     {/* Column 3 */}
                     <div className="feature-column">
                         
-                        <Image src="/images/VampireTherapist_7.png" alt="Feature 1 Image" width={500} height={300} layout="responsive" />
+                        <Image src="/images/VampireTherapist_7.webp" alt="Feature 1 Image" width={500} height={300} style={{ width: '100%', height: 'auto' }} />
                         <h1 className="feature-header">Address Historical Issues</h1>
                         <p>Embrace the role of a vampire therapist, guiding a wide range of patients from the Bronze Age to modern times towards mental well-being. Through your interactions, uncover and address distorted thinking patterns, gaining insights that bridge the supernatural and the human condition. Your therapeutic journey is not just about healing others, but also about discovering universal truths.</p>
                     </div>
                 </div>
             <div className="content-container">
             <div className="discord-cta-container">
-                <Link href="https://discord.gg/JM7Xr3zp7V"><Image src="/images/littlebat-discord-cta-small.png" alt="Discord link" width={600} height={133}  /></Link>
+                <Link href="https://discord.gg/JM7Xr3zp7V"><Image src="/images/littlebat-discord-cta-small.webp" alt="Discord link" width={600} height={133}  /></Link>
                 </div>
 
             </div>

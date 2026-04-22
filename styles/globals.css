@@ -618,8 +618,19 @@ code
         display: none;
     }
 
-    .bar-label {
+    .hero-bar-right .bar-label {
         display: none;
+    }
+
+    .hero-bar-left .bar-label {
+        font-size: 0.9rem;
+        padding: 3px 10px;
+        bottom: calc(100% + 6px);
+        white-space: nowrap;
+    }
+
+    .hero-bar-left .bar-label::after {
+        border-width: 6px;
     }
 }
 
@@ -778,6 +789,18 @@ code
     padding: 1rem 4rem 1rem 5rem;
     max-width: 860px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .quotes {
+        padding: 1rem 1.25rem;
+        margin: 2rem auto;
+        width: 92%;
+    }
+
+    .quotes::before {
+        display: none;
+    }
 }
 
 .quotes::before {
