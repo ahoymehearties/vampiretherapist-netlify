@@ -7,7 +7,7 @@ function Application({ Component, pageProps }) {
   return (
     <>
       <Head>
-       <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet" />
+       <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Alegreya:ital,wght@1,400;1,700&display=swap" rel="stylesheet" />
       </Head>
       <Component {...pageProps} />
     </>

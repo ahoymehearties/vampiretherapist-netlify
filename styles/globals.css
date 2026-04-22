@@ -2,11 +2,18 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 html, body {
-  background-color: #121212; /* Dark background */
-  color: #ffffff; /* Light text */
-  font-family: Arial, sans-serif; /* Friendly font */
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
   padding: 0;
   margin: 0;
+  padding-bottom: 144px;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    padding-bottom: 110px;
+  }
 }
 
 a {
@@ -138,7 +145,11 @@ code
 }
 
 .feature-column p {
-  /* Additional styles for paragraphs if needed */
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #ccc4bb;
+    margin-top: 0.75rem;
 }
 
 .feature-header {
@@ -261,28 +272,223 @@ code
 
 /* Press page */
 
-.header-image-container {
-    width: 80%;
-    height: 400px; /* Adjust height as needed */
-    overflow: hidden;
+.hero-video-container {
     position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.parallax-image {
-    width: 100%;
-    height: 100%;
+.hero-video {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover; /* Ensures image covers the area */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents image from repeating */
-    transform: scale(1); /* Scale up to allow for parallax movement */
-    z-index: 1;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    background-image: url('/images/VT_Sitebanner.png');
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 14%;
+    left: 4%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 44%;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 0 0 12px 0;
+}
+
+.hero-title span {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.88);
+    color: #ffffff;
+    font-family: 'Germania One', cursive;
+    font-size: clamp(3rem, 7vw, 8rem);
+    line-height: 1;
+    padding: 5px 16px 10px;
+    letter-spacing: 0.03em;
+}
+
+.hero-description {
+    color: #ffffff;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: clamp(1rem, 1.8vw, 1.6rem);
+    line-height: 1.55;
+    margin: 0;
+    padding: 6px 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    max-width: 480px;
+}
+
+@media (max-width: 768px) {
+    .hero-overlay {
+        bottom: 8%;
+        left: 4%;
+        max-width: 90%;
+    }
+
+    .hero-title span {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
+
+.hero-bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    height: 144px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.hero-bottom-bar::before {
+    content: '';
+    position: absolute;
+    top: -36px;
+    left: 0;
+    right: 0;
+    height: 36px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.92));
+    pointer-events: none;
+}
+
+.hero-bar-left {
+    flex: 0 0 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+.hero-bar-left a {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.hero-bar-left a:hover {
+    opacity: 1;
+}
+
+.hero-bar-left img {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
+.hero-bar-center {
+    flex: 0 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-bar-center img {
+    height: 110px;
+    width: auto;
+    display: block;
+    animation: batFloat 3s ease-in-out infinite;
+}
+
+@keyframes batFloat {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-10px); }
+}
+
+.bar-label {
+    position: absolute;
+    bottom: calc(100% + 11px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(224, 30, 27);
+    color: #ffffff;
+    font-family: 'Germania One', cursive;
+    font-size: 1.62rem;
+    letter-spacing: 0.1em;
+    padding: 6px 16px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.bar-label::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 11px solid transparent;
+    border-top-color: rgb(224, 30, 27);
+}
+
+.hero-bar-right {
+    flex: 0 0 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+}
+
+.hero-bar-right img {
+    height: 90px;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-bottom-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 16px;
+        gap: 6px;
+    }
+
+    .hero-bar-left,
+    .hero-bar-right {
+        flex: 0 0 auto;
+        width: 100%;
+        gap: 18px;
+        padding: 6px 0;
+    }
+
+    .hero-bar-left img {
+        height: 24px;
+    }
+
+    .hero-bar-right img {
+        height: 36px;
+    }
+
+    .hero-bar-center {
+        display: none;
+    }
+
+    .bar-label {
+        display: none;
+    }
 }
 
 .content-container {
@@ -297,8 +503,11 @@ code
 }
 
 .content-container p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: #ddd5c8;
+    margin-bottom: 1.2rem;
 }
 
 
@@ -375,19 +584,6 @@ code
   width: auto !important; /* Maintain aspect ratio */
   }
 
-  .header-image-container {
-    width: 100%;
-    height: 100px; /* Adjust height as needed */
-    overflow: hidden;
-    position: relative;
-  }
-
-  .parallax-image {
-        background-size: contain; /* or 'cover', depending on desired effect */
-        background-position: top center; /* Adjust as needed */
-
-    }
-
   .discord-cta-container {
   width: 80%; /* or whatever width looks best */
   margin: 0 auto; /* This centers the container */
@@ -445,8 +641,46 @@ code
 }
 
 .quotes {
-  margin:20px auto;
-  text-align:center
+    position: relative;
+    margin: 3rem auto;
+    padding: 1rem 4rem 1rem 5rem;
+    max-width: 860px;
+    text-align: center;
+}
+
+.quotes::before {
+    content: '\201C';
+    font-family: 'Alegreya', Georgia, serif;
+    font-size: 9rem;
+    line-height: 0;
+    position: absolute;
+    top: 4rem;
+    left: 0.5rem;
+    color: rgba(255, 255, 255, 0.12);
+    pointer-events: none;
+}
+
+.quotes p {
+    font-family: 'Alegreya', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(1.3rem, 2vw, 1.85rem);
+    line-height: 1.7;
+    color: #f0e8dc;
+    margin: 0;
+}
+
+.quotes p a {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-size: 0.72em;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    text-decoration: none;
+}
+
+.quotes p a:hover {
+    opacity: 0.9;
 }
 
 /* Container that holds Steam + GOG button side by side on desktop */

@@ -7,14 +7,36 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
 
+const QUOTES = [
+    { text: "I'm being a bit kinder to myself, and it's nice. It's positive. And it's remarkable how quickly and subtly a game can have that effect.", source: "Eurogamer", url: "https://www.eurogamer.net/vampire-therapist-asks-can-a-game-really-teach-the-fundamentals-of-therapy" },
+    { text: "Letting yourself get lost in this world is a must, and you'll probably find something you really needed along the way.", source: "Ginx.tv", url: "https://www.ginx.tv/en/video-games/tony-hawk-pro-skater-3-4-remake-july-2025-release-announced" },
+    { text: "It's simultaneously earnest and winningly ridiculous – but it's a labour of love, and an original one at that.", source: "The Spectator", url: "https://www.spectator.co.uk/article/completely-batty-vampire-therapist-reviewed/" },
+    { text: "Vampire Therapist is a true gem from a mental health standpoint and a successful educational game.", source: "Screenrant", url: "https://screenrant.com/vampire-therapist-review-a-surprisingly-educational-therapy-session/" },
+    { text: "…Vampire Therapist, there's no way you don't want to know more about that—but the underlying concept looks genuinely interesting too.", source: "PC Gamer", url: "https://www.pcgamer.com/vampire-therapist-is-a-game-about-helping-the-living-dead-come-to-terms-with-their-centuries-old-emotional-hangups" },
+    { text: "Vampire Therapist from Little Bat Games is one of our most anticipated games of 2024.", source: "Gayming Magazine", url: "https://gaymingmag.com/2024/01/vampire-therapist-is-a-thrilling-mix-of-what-we-do-in-the-shadows-and-horrible-histories/" },
+    { text: "…Vampire Therapist is shaking a lot of things up in one very elegant bag…", source: "Rock, Paper, Shotgun", url: "https://www.rockpapershotgun.com/upcoming-visual-novel-vampire-therapist-mixes-vampires-and-dark-humour-with-cbt" },
+    { text: "Vampire Therapist promises to be one of the best games of the summer and personally, one of the best games that I've ever played.", source: "The Fandomentals", url: "https://www.thefandomentals.com/vampire-therapist-demo-review/" },
+    { text: "This unique new vampire therapy RPG is exactly what I'm looking for.", source: "PCGamesN", url: "https://www.pcgamesn.com/vampire-therapist/demo-interview" },
+    { text: "Rarely have a game's characters and writing grabbed me so quickly, and I genuinely feel interested to keep learning what it's teaching me.", source: "Nickbait.com", url: "https://nickbait.com/previews/hands-on-preview-vampire-therapist/" },
+];
+
 export default function Home() {
 
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
+    const [quoteIndex, setQuoteIndex] = useState(0);
+    const [quoteVisible, setQuoteVisible] = useState(true);
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
+        const interval = setInterval(() => {
+            setQuoteVisible(false);
+            setTimeout(() => {
+                setQuoteIndex(i => (i + 1) % QUOTES.length);
+                setQuoteVisible(true);
+            }, 600);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, []);
 
+    useEffect(() => {
         const steamButton = document.querySelector('a[href="https://store.steampowered.com/app/2481020?utm_source=website&utm_medium=web&utm_campaign=steam_wishlist_gen"]');
         const gogButton = document.querySelector('a[href="https://www.gog.com/en/game/vampire_therapist?utm_source=website&utm_medium=web&utm_campaign=gog_wishlist_gen"]');
 
@@ -41,7 +63,6 @@ export default function Home() {
         }
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
             if (steamButton) steamButton.removeEventListener('click', () => {});
             if (gogButton) gogButton.removeEventListener('click', () => {});
         };
@@ -69,17 +90,60 @@ export default function Home() {
                 <meta name="robots" content="index, follow" />
             </Head>
             <Navbar />
-            <main className="main-container">
-                <div className="header-image-container">
-                    <div 
-                        className="parallax-image"
-                        style={{ 
-                            backgroundImage: `url('/images/VT_Sitebanner.png')`,
-                            transform: `translateY(${offsetY * 0.5}px)` 
-                        }}
-                    ></div>
+            <div className="hero-video-container">
+                <video
+                    className="hero-video"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/video/VT-AmbientVG4k.mp4" type="video/mp4" />
+                </video>
+                <div className="hero-overlay">
+                    <h1 className="hero-title">
+                        <span>AWARD-WINNING</span>
+                        <span>DARK COMEDY</span>
+                        <span>THERAPY GAME</span>
+                    </h1>
+                    <p className="hero-description">You're an expat cowboy giving therapy to vampires from throughout history above a European goth nightclub.<br /><br />Yes, this is a real game, vetted by licensed therapists.</p>
                 </div>
-<div className="wishlist-container">
+                <div className="hero-bottom-bar">
+                    <div className="hero-bar-left">
+                        <div className="bar-label">THIS IS WHERE YOU BUY IT</div>
+                        <a href="https://store.steampowered.com/app/2481020" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/Steam.svg" alt="Steam" />
+                        </a>
+                        <a href="https://www.gog.com/en/game/vampire_therapist" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/gog.svg" alt="GOG" />
+                        </a>
+                        <a href="https://store.playstation.com/en-us/concept/10014497" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/Playstation-Store.svg" alt="PlayStation Store" />
+                        </a>
+                        <a href="https://www.nintendo.com/us/store/products/vampire-therapist-switch/" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/nintendo-switch-logo.svg" alt="Nintendo Switch" />
+                        </a>
+                        <a href="https://www.xbox.com/en-us/games/store/vampire-therapist/9phx2nf7bvcb" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/xbox-logo.svg" alt="Xbox" />
+                        </a>
+                    </div>
+                    <div className="hero-bar-center">
+                        <img src="/images/Little-Bat-Games-logo-justbat.svg" alt="Little Bat Games" />
+                    </div>
+                    <div className="hero-bar-right">
+                        <div className="bar-label">THIS IS WHERE YOU OOH AND AHH</div>
+                        <img src="/images/bafta_badge.png" alt="BAFTA Nominee" />
+                        <img src="/images/DCP2025_Signet_Beste-Story.png" alt="DCP 2025 Beste Story" />
+                        <img src="/images/award-indiex.png" alt="IndiEx Award" />
+                        <img src="/images/award-dep.png" alt="DEP 2024 Award" />
+                        <img src="/images/g4cTemp.png" alt="Games for Change Award" />
+                    </div>
+                </div>
+            </div>
+            <main className="main-container">
+
+{/*
+ <div className="wishlist-container">
   <iframe
     src="https://store.steampowered.com/widget/2481020/?utm_source_website&utm_campaign=wishlistgen"
     frameBorder="0"
@@ -140,7 +204,7 @@ export default function Home() {
     />
     </a>
 </div>
-
+*/}
 
 
 
@@ -156,9 +220,9 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="content-container">
-                    <p style={{ color: '#fff' }}>Embark on a journey of healing and discovery in the award-winning Vampire Therapist, where you unravel centuries of emotional turmoil, dispel decades of delusions, and confront the complexities of self-loathing. Utilizing authentic cognitive behavioral therapy techniques, this groundbreaking game invites you to guide vampires from various epochs through their psychological struggles. Experience the transformative power of therapy as you help these timeless beings navigate their psyches and find inner peace.    </p>
+                    <p style={{ color: '#fff' }}>If you think all there is to being a vampire is drinking blood and wearing tight leather, think again: vampires are still human. In the BAFTA-nominated Vampire Therapist, you're Sam Walls &emdash; a reformed Wild West cowboy vampire training with a 3000-year-old immortal above a European goth club to help historical vampires sort out their issues. From the Iron Age to the Renaissance and beyond, you'll find that humans haven't really changed much … and vampires even less.</p>
                     <p style={{ color: '#fff' }}>With an all-star cast including <strong>Matthew Mercer</strong> (<em>Baldur's Gate 3, Critical Role</em>), <strong>Cyrus Nemati</strong> (<em>Hades, Pyre</em>), <strong>Sarah Grayson</strong> (<em>Hades 2, Gone Home</em>), <strong>Francesca Meaux</strong> (<em>Hades, Final Fantasy VII: Rebirth</em>), and introducing <strong>Kylie Clark</strong> and <strong>Kit Chen</strong>.</p>
-                    
+              {/*      
                 <div className="awards-container">
                     <Image 
                     src="/images/DCP2025_Signet_Beste-Story.png"
@@ -204,6 +268,7 @@ export default function Home() {
                     />
 
                     </div>
+                */}
                 <div className="dlc-container">
                     <a
                         href="https://store.steampowered.com/app/3320590/Vampire_Therapist__Couples_Therapy/?utm_source=website&utm_medium=referral&utm_campaign=website_ct"
@@ -221,18 +286,15 @@ export default function Home() {
                     </a>
                 </div>
 
-                <div className="quotes">
-                    <p><em>I'm being a bit kinder to myself, and it's nice. It's positive. And it's remarkable how quickly and subtly a game can have that effect.</em> — <a href="https://www.eurogamer.net/vampire-therapist-asks-can-a-game-really-teach-the-fundamentals-of-therapy">Eurogamer</a></p>
-                    <p><em>Letting yourself get lost in this world is a must, and you’ll probably find something you really needed along the way.</em> — <a href="https://www.ginx.tv/en/video-games/tony-hawk-pro-skater-3-4-remake-july-2025-release-announced">Ginx.tv</a></p>
-                    <p><em>It’s simultaneously earnest and winningly ridiculous – but it’s a labour of love, and an original one at that.</em> — <a href="https://www.spectator.co.uk/article/completely-batty-vampire-therapist-reviewed/">The Spectator</a></p>
-                    <p><em>Vampire Therapist is a true gem from a mental health standpoint and a successful educational game.</em> — <a href="https://screenrant.com/vampire-therapist-review-a-surprisingly-educational-therapy-session/">Screenrant</a></p>
-                    <p><em>…Vampire Therapist, there's no way you don't want to know more about that—but the underlying concept looks genuinely interesting too.</em> — <a href="https://www.pcgamer.com/vampire-therapist-is-a-game-about-helping-the-living-dead-come-to-terms-with-their-centuries-old-emotional-hangups">PC Gamer</a></p>
-                    <p><em>Vampire Therapist from Little Bat Games is one of our most anticipated games of 2024. —  <a href="https://gaymingmag.com/2024/01/vampire-therapist-is-a-thrilling-mix-of-what-we-do-in-the-shadows-and-horrible-histories/">Gayming Magazine</a></em></p>
-                    <p><em>…Vampire Therapist is shaking a lot of things up in one very elegant bag…</em> — <a href="https://www.rockpapershotgun.com/upcoming-visual-novel-vampire-therapist-mixes-vampires-and-dark-humour-with-cbt">Rock, Paper, Shotgun</a></p>
-            <p><em>Vampire Therapist promises to be one of the best games of the summer and personally, one of the best games that I’ve ever played.</em> — <a href="https://www.thefandomentals.com/vampire-therapist-demo-review/">The Fandomentals</a></p>
-            <p><em>This unique new vampire therapy RPG is exactly what I’m looking for.</em> — <a href="https://www.pcgamesn.com/vampire-therapist/demo-interview">PCGamesN</a></p>
-            <p><em>Rarely have a game’s characters and writing grabbed me so quickly, and I genuinely feel interested to keep learning what it’s teaching me.</em> — <a href="https://nickbait.com/previews/hands-on-preview-vampire-therapist/">Nickbait.com</a></p>
-                    </div>
+                <div className="quotes" style={{ opacity: quoteVisible ? 1 : 0, transition: "opacity 0.6s ease" }}>
+                    <p>
+                        <em>{QUOTES[quoteIndex].text}</em>
+                        {" — "}
+                        <a href={QUOTES[quoteIndex].url} target="_blank" rel="noopener noreferrer">
+                            {QUOTES[quoteIndex].source}
+                        </a>
+                    </p>
+                </div>
                 </div>
             {/* Features */}
 
