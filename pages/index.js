@@ -100,6 +100,11 @@ export default function Home() {
                 >
                     <source src="/video/VT-AmbientVG4k.mp4" type="video/mp4" />
                 </video>
+                <img
+                    src="/images/VTLogoWhite_Shadow.png"
+                    alt="Vampire Therapist"
+                    className="hero-logo"
+                />
                 <div className="hero-overlay">
                     <h1 className="hero-title">
                         <span>AWARD-WINNING</span>
@@ -111,10 +116,10 @@ export default function Home() {
                 <div className="hero-bottom-bar">
                     <div className="hero-bar-left">
                         <div className="bar-label">THIS IS WHERE YOU BUY IT</div>
-                        <a href="https://store.steampowered.com/app/2481020" target="_blank" rel="noopener noreferrer">
+                        <a href="https://store.steampowered.com/bundle/50334/Vampire_Therapist_Complete_Edition/?utm_source=vtcom&utm_medium=web&utm_campaign=gen" target="_blank" rel="noopener noreferrer">
                             <img src="/images/Steam.svg" alt="Steam" />
                         </a>
-                        <a href="https://www.gog.com/en/game/vampire_therapist" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.gog.com/en/game/vampire_therapist_complete_edition?utm_source=vtcom&utm_medium=web&utm_campaign=gen" target="_blank" rel="noopener noreferrer">
                             <img src="/images/gog.svg" alt="GOG" />
                         </a>
                         <a href="https://store.playstation.com/en-us/concept/10014497" target="_blank" rel="noopener noreferrer">
@@ -220,7 +225,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="content-container">
-                    <p style={{ color: '#fff' }}>If you think all there is to being a vampire is drinking blood and wearing tight leather, think again: vampires are still human. In the BAFTA-nominated Vampire Therapist, you're Sam Walls &emdash; a reformed Wild West cowboy vampire training with a 3000-year-old immortal above a European goth club to help historical vampires sort out their issues. From the Iron Age to the Renaissance and beyond, you'll find that humans haven't really changed much … and vampires even less.</p>
+                    <p style={{ color: '#fff' }}>If you think all there is to being a vampire is drinking blood and wearing tight leather, think again: vampires are still human. In the BAFTA-nominated Vampire Therapist, you're Sam Walls — a reformed Wild West cowboy vampire training with a 3000-year-old immortal above a European goth club to help historical vampires sort out their issues. From the Iron Age to the Renaissance and beyond, you'll find that humans haven't really changed much … and vampires even less.</p>
                     <p style={{ color: '#fff' }}>With an all-star cast including <strong>Matthew Mercer</strong> (<em>Baldur's Gate 3, Critical Role</em>), <strong>Cyrus Nemati</strong> (<em>Hades, Pyre</em>), <strong>Sarah Grayson</strong> (<em>Hades 2, Gone Home</em>), <strong>Francesca Meaux</strong> (<em>Hades, Final Fantasy VII: Rebirth</em>), and introducing <strong>Kylie Clark</strong> and <strong>Kit Chen</strong>.</p>
               {/*      
                 <div className="awards-container">
