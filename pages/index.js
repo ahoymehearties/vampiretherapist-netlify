@@ -36,37 +36,11 @@ export default function Home() {
         return () => clearInterval(interval);
     }, []);
 
-    useEffect(() => {
-        const steamButton = document.querySelector('a[href="https://store.steampowered.com/app/2481020?utm_source=website&utm_medium=web&utm_campaign=steam_wishlist_gen"]');
-        const gogButton = document.querySelector('a[href="https://www.gog.com/en/game/vampire_therapist?utm_source=website&utm_medium=web&utm_campaign=gog_wishlist_gen"]');
-
-        if (steamButton) {
-            steamButton.addEventListener('click', () => {
-                fbq('track', 'AddToWishlist', {
-                    content_ids: ['steam_2481020'],
-                    content_name: 'Steam Wishlist',
-                    value: 0,
-                    currency: 'USD'
-                });
-            });
+    const trackStore = (store) => {
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'InitiateCheckout', { content_name: store, content_category: 'Game' });
         }
-
-        if (gogButton) {
-            gogButton.addEventListener('click', () => {
-                fbq('track', 'AddToWishlist', {
-                    content_ids: ['gog_vampire_therapist'],
-                    content_name: 'GOG Wishlist',
-                    value: 0,
-                    currency: 'USD'
-                });
-            });
-        }
-
-        return () => {
-            if (steamButton) steamButton.removeEventListener('click', () => {});
-            if (gogButton) gogButton.removeEventListener('click', () => {});
-        };
-    }, []);
+    };
 
     return (
         <>
@@ -116,19 +90,19 @@ export default function Home() {
                 <div className="hero-bottom-bar">
                     <div className="hero-bar-left">
                         <div className="bar-label">THIS IS WHERE YOU BUY IT</div>
-                        <a href="https://store.steampowered.com/bundle/50334/Vampire_Therapist_Complete_Edition/?utm_source=vtcom&utm_medium=web&utm_campaign=gen" target="_blank" rel="noopener noreferrer">
+                        <a href="https://store.steampowered.com/bundle/50334/Vampire_Therapist_Complete_Edition/?utm_source=vtcom&utm_medium=web&utm_campaign=gen" target="_blank" rel="noopener noreferrer" onClick={() => trackStore('Steam')}>
                             <img src="/images/Steam.svg" alt="Steam" />
                         </a>
-                        <a href="https://www.gog.com/en/game/vampire_therapist_complete_edition?utm_source=vtcom&utm_medium=web&utm_campaign=gen" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.gog.com/en/game/vampire_therapist_complete_edition?utm_source=vtcom&utm_medium=web&utm_campaign=gen" target="_blank" rel="noopener noreferrer" onClick={() => trackStore('GOG')}>
                             <img src="/images/gog.svg" alt="GOG" />
                         </a>
-                        <a href="https://store.playstation.com/en-us/concept/10014497" target="_blank" rel="noopener noreferrer">
+                        <a href="https://store.playstation.com/en-us/concept/10014497" target="_blank" rel="noopener noreferrer" onClick={() => trackStore('PlayStation')}>
                             <img src="/images/Playstation-Store.svg" alt="PlayStation Store" />
                         </a>
-                        <a href="https://www.nintendo.com/us/store/products/vampire-therapist-switch/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.nintendo.com/us/store/products/vampire-therapist-switch/" target="_blank" rel="noopener noreferrer" onClick={() => trackStore('Nintendo Switch')}>
                             <img src="/images/nintendo-switch-logo.svg" alt="Nintendo Switch" />
                         </a>
-                        <a href="https://www.xbox.com/en-us/games/store/vampire-therapist/9phx2nf7bvcb" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.xbox.com/en-us/games/store/vampire-therapist/9phx2nf7bvcb" target="_blank" rel="noopener noreferrer" onClick={() => trackStore('Xbox')}>
                             <img src="/images/xbox-logo.svg" alt="Xbox" />
                         </a>
                     </div>
