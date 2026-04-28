@@ -51,6 +51,54 @@ export default function Home() {
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+                <link rel="canonical" href="https://vampiretherapist.com/" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "VideoGame",
+                        "name": "Vampire Therapist",
+                        "description": "BAFTA-nominated dark comedy game about giving therapy to vampires from throughout history. Uses real cognitive behavioral therapy techniques, vetted by licensed therapists.",
+                        "url": "https://vampiretherapist.com",
+                        "image": "https://vampiretherapist.com/images/VT_LargeCapsule.webp",
+                        "genre": ["Visual Novel", "Educational Game", "Dark Comedy"],
+                        "gamePlatform": ["Steam", "GOG", "PlayStation 4", "PlayStation 5", "Xbox", "Nintendo Switch"],
+                        "datePublished": "2024-07-18",
+                        "inLanguage": "en",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Little Bat Games",
+                            "url": "https://littlebat.games"
+                        },
+                        "author": {
+                            "@type": "Person",
+                            "name": "Cyrus Nemati"
+                        },
+                        "offers": [
+                            {
+                                "@type": "Offer",
+                                "price": "14.99",
+                                "priceCurrency": "USD",
+                                "url": "https://store.steampowered.com/bundle/50334/Vampire_Therapist_Complete_Edition/"
+                            }
+                        ],
+                        "award": [
+                            "BAFTA Games Award Nominee 2025",
+                            "Indie X Award Winner 2024",
+                            "German Developer Prize Winner 2024",
+                            "German Computer Games Prize Winner 2025",
+                            "Games for Change Award Winner 2025"
+                        ],
+                        "actor": [
+                            { "@type": "Person", "name": "Matthew Mercer" },
+                            { "@type": "Person", "name": "Cyrus Nemati" },
+                            { "@type": "Person", "name": "Sarah Grayson" },
+                            { "@type": "Person", "name": "Francesca Meaux" },
+                            { "@type": "Person", "name": "Kylie Clark" },
+                            { "@type": "Person", "name": "Kit Chen" }
+                        ]
+                    })}}
+                />
                 <meta property="og:title" content="Vampire Therapist — BAFTA-Nominated Game About Therapy & Self-Discovery" />
                 <meta property="og:description" content="The award-winning game that uses real cognitive behavioral therapy to help vampires — and maybe you — find inner peace. Available now on Steam, GOG, PlayStation, Xbox, and Nintendo Switch." />
                 <meta property="og:image" content="https://vampiretherapist.com/images/VT_LargeCapsule.png" />
@@ -281,24 +329,24 @@ export default function Home() {
                     {/* Column 1 */}
                     <div className="feature-column">
                         
-                        <Image src="/images/vtshot2.webp" alt="Feature 1 Image" width={500} height={300} style={{ width: '100%', height: 'auto' }} />
-                        <h1 className="feature-header">Explore an Enigmatic Gothic Universe</h1>
+                        <Image src="/images/vtshot2.webp" alt="The gothic nightclub interior of Vampire Therapist" width={500} height={300} style={{ width: '100%', height: 'auto' }} />
+                        <h2 className="feature-header">Explore an Enigmatic Gothic Universe</h2>
                         <p>Step into an unique gothic universe set in a European vampire-run goth club. As a reformed cowboy vampire, you'll navigate a world of dark European nightlife, encountering ancient vampires and a diverse array of clubgoers. Immerse yourself in a setting where humor and memorable characters bring the shadows to life.</p>
                     </div>
 
                     {/* Column 2 */}
                     <div className="feature-column">
                         
-                        <Image src="/images/VampireTherapist_4.webp" alt="Feature 1 Image" width={500} height={300} style={{ width: '100%', height: 'auto' }} />
-                        <h1 className="feature-header">Discover Therapy Concepts Through Gameplay</h1>
+                        <Image src="/images/VampireTherapist_4.webp" alt="A CBT therapy session in progress — Vampire Therapist gameplay" width={500} height={300} style={{ width: '100%', height: 'auto' }} />
+                        <h2 className="feature-header">Discover Therapy Concepts Through Gameplay</h2>
                         <p>Dive into the mechanics of cognitive behavioral therapy, intricately woven into gameplay. Understand the psychological depths of both the living and the undead. Engage with concepts and methodologies that are not only game-centric but also vetted by professional therapists, offering a unique blend of entertainment and real-world insight.</p>
                     </div>
 
                     {/* Column 3 */}
                     <div className="feature-column">
                         
-                        <Image src="/images/VampireTherapist_7.webp" alt="Feature 1 Image" width={500} height={300} style={{ width: '100%', height: 'auto' }} />
-                        <h1 className="feature-header">Address Historical Issues</h1>
+                        <Image src="/images/VampireTherapist_7.webp" alt="A historical vampire patient dialogue scene in Vampire Therapist" width={500} height={300} style={{ width: '100%', height: 'auto' }} />
+                        <h2 className="feature-header">Address Historical Issues</h2>
                         <p>Embrace the role of a vampire therapist, guiding a wide range of patients from the Bronze Age to modern times towards mental well-being. Through your interactions, uncover and address distorted thinking patterns, gaining insights that bridge the supernatural and the human condition. Your therapeutic journey is not just about healing others, but also about discovering universal truths.</p>
                     </div>
                 </div>

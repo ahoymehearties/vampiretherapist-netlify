@@ -8,7 +8,8 @@ export default function Impressum() {
     return (
         <>
             <Head>
-                <title>Impressum | Your Site Name</title>
+                <title>Impressum | Vampire Therapist</title>
+                <meta name="robots" content="noindex, follow" />
             </Head>
             <Navbar />
              <main className="impressum-content">

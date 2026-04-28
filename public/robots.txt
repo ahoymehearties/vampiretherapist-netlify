@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /amaze-kit
+Disallow: /discord
+Disallow: /api/
+
+Sitemap: https://vampiretherapist.com/sitemap.xml
