@@ -76,7 +76,7 @@ export default function Home() {
                     <div 
                         className="parallax-image"
                         style={{ 
-                            backgroundImage: `url('/images/VT_Sitebanner.png')`,
+                            backgroundImage: `url('/images/VT_Sitebanner.webp')`,
                             transform: `translateY(${offsetY * 0.5}px)` 
                         }}
                     ></div>
@@ -130,7 +130,7 @@ export default function Home() {
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                            title="Embedded youtube"
+                            title="Vampire Therapist — press trailer"
                         ></iframe>
                     </div>
                 </div>

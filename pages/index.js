@@ -242,7 +242,7 @@ export default function Home() {
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                            title="Embedded youtube"
+                            title="Vampire Therapist — official trailer"
                         ></iframe>
                     </div>
                 </div>

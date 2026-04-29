@@ -55,6 +55,7 @@ export default function Home() {
             <Head>
                 <title>Vampire Therapist - Amaze</title>
                 <meta name="description" content="Amaze Submission kit for Vampire Therapist" />
+                <meta name="robots" content="noindex, nofollow" />
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>

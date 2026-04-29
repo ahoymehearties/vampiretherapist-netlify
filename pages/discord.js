@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
@@ -8,5 +9,9 @@ export default function RedirectPage() {
         router.push('https://discord.gg/JM7Xr3zp7V');
     }, [router]);
 
-    return null;
+    return (
+        <Head>
+            <meta name="robots" content="noindex, nofollow" />
+        </Head>
+    );
 }
