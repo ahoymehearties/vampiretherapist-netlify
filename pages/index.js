@@ -138,7 +138,7 @@ export default function Home() {
                 <div className="hero-bottom-bar">
                     <div className="hero-bar-left">
                         <div className="bar-label">THIS IS WHERE YOU BUY IT</div>
-                        <a href="https://store.steampowered.com/bundle/50334/Vampire_Therapist_Complete_Edition/?utm_source=vtcom&utm_medium=web&utm_campaign=gen" target="_blank" rel="noopener noreferrer" onClick={() => trackStore('Steam')}>
+                        <a href="https://store.steampowered.com/app/2481020/Vampire_Therapist/?utm_source=vtcom&utm_medium=web&utm_campaign=gen" target="_blank" rel="noopener noreferrer" onClick={() => trackStore('Steam')}>
                             <img src="/images/Steam.svg" alt="Steam" />
                         </a>
                         <a href="https://www.gog.com/en/game/vampire_therapist_complete_edition?utm_source=vtcom&utm_medium=web&utm_campaign=gen" target="_blank" rel="noopener noreferrer" onClick={() => trackStore('GOG')}>
