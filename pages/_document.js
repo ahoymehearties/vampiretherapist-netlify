@@ -35,6 +35,17 @@ class MyDocument extends Document {
             />
           </noscript>
           {/* End Meta Pixel Code */}
+          {/* Start Google Ads code */}
+          
+          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18192724152"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-18192724152');
+          </script>
+          {/* End Google Ads Code */}
         </Head>
         <body>
           <Main />
