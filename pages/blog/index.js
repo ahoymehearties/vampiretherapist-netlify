@@ -3,8 +3,36 @@ import Link from 'next/link';
 import Navbar from '@components/Navbar';
 import Footer from '@components/Footer';
 import { getSortedPostsData } from '../../lib/posts';
+import { useState } from 'react';
 
 export default function BlogIndex({ allPostsData }) {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+    try {
+      const res = await fetch('/.netlify/functions/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setStatus('success');
+        setEmail('');
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -19,18 +47,35 @@ export default function BlogIndex({ allPostsData }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Navbar />
-    <div>
-      <h1>Blog</h1>
-      <ul>
-        {allPostsData.map(({ slug, frontmatter }) => (
-          <li key={slug}>
-            <Link href={`/blog/${slug}`}>{frontmatter.title}</Link>
+      <div>
+        <h1>Blog</h1>
+        <ul>
+          {allPostsData.map(({ slug, frontmatter }) => (
+            <li key={slug}>
+              <Link href={`/blog/${slug}`}>{frontmatter.title}</Link>
+              <p>{frontmatter.date}</p>
+            </li>
+          ))}
+        </ul>
 
-            <p>{frontmatter.date}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
+        <div className="email-signup-section">
+          <form onSubmit={handleSubmit} id="blog-subscribe-form">
+            <span>Sign up for Email Updates</span>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit" disabled={loading}>
+              {loading ? 'Subscribing…' : 'Subscribe'}
+            </button>
+            {status === 'success' && <p>Thanks for subscribing!</p>}
+            {status === 'error' && <p>Something went wrong. Please try again.</p>}
+          </form>
+        </div>
+      </div>
       <Footer />
     </>
   );
