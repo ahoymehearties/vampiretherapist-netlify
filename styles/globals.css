@@ -1,6 +1,57 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+/* Sale modal */
+.sale-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+.sale-modal {
+  position: relative;
+  max-width: min(860px, 100%);
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+}
+
+.sale-modal img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sale-modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: background 0.2s;
+}
+
+.sale-modal-close:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
 html, body {
   background-color: #121212;
   color: #ffffff;
@@ -38,6 +89,13 @@ nav.scrolled {
 
 .social-icon {
   color: white;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+img.social-icon {
+  height: 1.5rem;
+  width: auto;
 }
 
 main {

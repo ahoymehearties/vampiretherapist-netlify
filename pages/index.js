@@ -3,6 +3,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Navbar from '@components/Navbar'
 import CookieConsent from '@components/CookieConsent'
+import SaleModal from '@components/SaleModal'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
@@ -22,6 +23,7 @@ const QUOTES = [
 
 export default function Home() {
 
+    const [showSale, setShowSale] = useState(true);
     const [quoteIndex, setQuoteIndex] = useState(0);
     const [quoteVisible, setQuoteVisible] = useState(true);
     const [subEmail, setSubEmail] = useState('');
@@ -66,6 +68,7 @@ export default function Home() {
 
     return (
         <>
+            {showSale && <SaleModal onClose={() => setShowSale(false)} />}
             <Head>
                 <title>Vampire Therapist — BAFTA-Nominated Game About Therapy, Vampires & Self-Discovery</title>
                 <meta name="description" content="Vampire Therapist is the BAFTA-nominated game that uses real cognitive behavioral therapy to help vampires — and maybe you — find inner peace. Featuring Matthew Mercer and an all-star cast. Available now on Steam, GOG, PlayStation, Xbox, and Nintendo Switch." />

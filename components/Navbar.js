@@ -27,7 +27,7 @@ export default function Navbar() {
                 </li>
                 <li style={{ margin: "0 1rem" }}>
                     <a href="https://bsky.app/profile/littlebatgames.bsky.social" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/bskyiconw.png" height="16" />
+                        <img src="/images/bskyiconw.png" className="social-icon" alt="Bluesky" />
                     </a>
                 </li>
                 <li style={{ margin: "0 1rem" }}>
