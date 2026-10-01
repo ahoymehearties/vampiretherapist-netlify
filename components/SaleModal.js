@@ -18,8 +18,8 @@ export default function SaleModal({ onClose }) {
           onClick={onClose}
         >
           <img
-            src="/images/VT-Summer2026SteamSale.webp"
-            alt="Steam Summer Sale — Vampire Therapist 35% off, Jun 25–Jul 9"
+            src="/images/VT-fall2026Sale.webp"
+            alt="Steam Fall Sale — Vampire Therapist 35% off, Oct 1-Oct 8"
           />
         </a>
       </div>
