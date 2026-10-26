@@ -8,7 +8,7 @@ export default function SaleModal({ onClose }) {
   }, [onClose]);
 
   return (
-    <div className="sale-modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label="Steam Summer Sale">
+    <div className="sale-modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label="Steam Scream Sale">
       <div className="sale-modal" onClick={(e) => e.stopPropagation()}>
         <button className="sale-modal-close" onClick={onClose} aria-label="Close">&#x2715;</button>
         <a
@@ -18,8 +18,8 @@ export default function SaleModal({ onClose }) {
           onClick={onClose}
         >
           <img
-            src="/images/VT-fall2026Sale.webp"
-            alt="Steam Fall Sale — Vampire Therapist 35% off, Oct 1-Oct 8"
+            src="/images/VT-Oct2026Sale.webp"
+            alt="Steam Fall Sale — Vampire Therapist 35% off, Oct 26-Nov 2"
           />
         </a>
       </div>
